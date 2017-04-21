@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>NServiceKit.Logging.Elmah</id>
+    <version>1.0.8</version>
+    <title>NServiceKit.Logging.Elmah</title>
+    <authors>Demis Bellot</authors>
+    <owners>Demis Bellot</owners>
+    <licenseUrl>https://github.com/NServiceKit/NServiceKit/blob/v3/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/NServiceKit/NServiceKit.Logging</projectUrl>
+    <iconUrl>http://www.nservicekit.net/logo-100x100.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Provides Elmah logging integration for other NServiceKit projects</description>
+    <summary>Elmah logging integration for NServiceKit, the Opensource .NET and Mono REST Web Services Framework</summary>
+    <copyright>NServiceKit 2014 and contributors</copyright>
+    <language>en-US</language>
+    <tags>NServiceKit log logging elmah</tags>
+    <dependencies>
+      <dependency id="elmah.corelibrary" />
+      <dependency id="NServiceKit.Common" version="[1.0, 2.0)" />
+    </dependencies>
+  </metadata>
+</package>

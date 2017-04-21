@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>logging</id>
+    <version>0.9.1</version>
+    <title>logging</title>
+    <authors>Daniel Crenna</authors>
+    <owners>Daniel Crenna</owners>
+    <licenseUrl>https://github.com/danielcrenna/webstack/blob/master/LICENSE.md</licenseUrl>
+    <projectUrl>https://github.com/danielcrenna/webstack/tree/master/logging</projectUrl>
+    <iconUrl>http://apitize.com.s3.amazonaws.com/logo_generic.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>A simple logging abstraction. You don't have the option of using immediate-mode logging, so you never accidentally kill performance.</description>
+    <summary>A simple logging abstraction.</summary>
+    <language>en-US</language>
+    <tags>logging</tags>
+    <dependencies>
+      <dependency id="container" version="1.1.1" />
+      <dependency id="NLog" version="2.0.1.2" />
+    </dependencies>
+  </metadata>
+</package>

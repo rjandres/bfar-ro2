@@ -1,0 +1,844 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A7D69143-5E24-46D7-94E9-B8B735EBAA2D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>BFARAutomatedSystem.My.MyApplication</StartupObject>
+    <RootNamespace>BFARAutomatedSystem</RootNamespace>
+    <AssemblyName>BFARAutomatedSystem</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>D:\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>BFARAutomatedSystem.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>BFARAutomatedSystem.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>50123FEC064020F3B16508F6108D750A303C2006</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>BFARAutomatedSystem_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Common.Logging">
+      <HintPath>..\packages\Common.Logging.3.3.1\lib\net40\Common.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Logging.Core">
+      <HintPath>..\packages\Common.Logging.Core.3.3.1\lib\net40\Common.Logging.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Logging.Elmah">
+      <HintPath>..\packages\ElmahCommonLogging.1.5\lib\net45\Common.Logging.Elmah.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Logging.Elmah.v2">
+      <HintPath>..\packages\Common.Logging.Elmah.v2.1.0.2\lib\net40\Common.Logging.Elmah.v2.dll</HintPath>
+    </Reference>
+    <Reference Include="container">
+      <HintPath>..\packages\logging.0.9.1\lib\net40\container.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="Elmah">
+      <HintPath>..\packages\elmah.corelibrary.1.2.2\lib\Elmah.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="logging">
+      <HintPath>..\packages\logging.0.9.1\lib\net40\logging.dll</HintPath>
+    </Reference>
+    <Reference Include="logging.nlog">
+      <HintPath>..\packages\logging.0.9.1\lib\net40\logging.nlog.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic.Compatibility" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.7.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\MySql.Data.6.7.9\lib\net45\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data.Entity, Version=6.6.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\MySQL\Connector NET 6.7.4\Assemblies\v4.5\MySql.Data.Entity.dll</HintPath>
+    </Reference>
+    <Reference Include="NLog">
+      <HintPath>..\packages\logging.0.9.1\lib\net40\NLog.dll</HintPath>
+    </Reference>
+    <Reference Include="NServiceKit.Common">
+      <HintPath>..\packages\NServiceKit.Common.1.0.43\lib\net35\NServiceKit.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="NServiceKit.Interfaces">
+      <HintPath>..\packages\NServiceKit.Common.1.0.43\lib\net35\NServiceKit.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="NServiceKit.Logging.Elmah">
+      <HintPath>..\packages\NServiceKit.Logging.Elmah.1.0.8\lib\net35\NServiceKit.Logging.Elmah.dll</HintPath>
+    </Reference>
+    <Reference Include="NServiceKit.Text">
+      <HintPath>..\packages\NServiceKit.Text.1.0.10\lib\net35\NServiceKit.Text.dll</HintPath>
+    </Reference>
+    <Reference Include="office, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ServiceStack.Interfaces">
+      <HintPath>..\packages\ServiceStack.Interfaces.4.5.8\lib\portable-wp80+sl5+net45+win8+wpa81+monotouch+monoandroid+xamarin.ios10\ServiceStack.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Logging.Elmah">
+      <HintPath>..\packages\ServiceStack.Logging.Elmah.4.5.8\lib\net45\ServiceStack.Logging.Elmah.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Deployment">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.ServiceProcess">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Services">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="dsPDF.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsPDF.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DTR1.vb">
+      <DependentUpon>DTR.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="frmAddEdit.Designer.vb">
+      <DependentUpon>frmAddEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAEServiceRecord.Designer.vb">
+      <DependentUpon>frmAEServiceRecord.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAEServiceRecord.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDeduction.Designer.vb">
+      <DependentUpon>frmDeduction.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDeduction.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDeductionType.Designer.vb">
+      <DependentUpon>frmDeductionType.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDeductionType.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGradeInput.Designer.vb">
+      <DependentUpon>frmGradeInput.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmGradeInput.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPayrollEntry.Designer.vb">
+      <DependentUpon>frmPayrollEntry.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPayrollEntry.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPayrollMain.Designer.vb">
+      <DependentUpon>frmPayrollMain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPayrollMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSalaryGrade.Designer.vb">
+      <DependentUpon>frmSalaryGrade.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSalaryGrade.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSelectGrade.Designer.vb">
+      <DependentUpon>frmSelectGrade.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSelectGrade.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmServiceRecord.Designer.vb">
+      <DependentUpon>frmServiceRecord.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmServiceRecord.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTripTicket.Designer.vb">
+      <DependentUpon>frmTripTicket.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTripTicket.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonalInfo.Designer.vb">
+      <DependentUpon>PersonalInfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PersonalInfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rptTO.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptTO.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="dsDTRPrint.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsDTRPrint.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsDTRPrint.vb">
+      <DependentUpon>dsDTRPrint.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="fmrPrintTO.Designer.vb">
+      <DependentUpon>fmrPrintTO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="fmrPrintTO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.vb">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMeeting.Designer.vb">
+      <DependentUpon>frmMeeting.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMeeting.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOT.Designer.vb">
+      <DependentUpon>frmOT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmOT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTimeCheck.Designer.vb">
+      <DependentUpon>frmTimeCheck.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTimeCheck.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAEDivHead.Designer.vb">
+      <DependentUpon>frmAEDivHead.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAEDivHead.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAEDU.Designer.vb">
+      <DependentUpon>frmAEDU.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAEDU.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDesignationUnit.Designer.vb">
+      <DependentUpon>frmDesignationUnit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDesignationUnit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDivHead.Designer.vb">
+      <DependentUpon>frmDivHead.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDivHead.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAEUnits.Designer.vb">
+      <DependentUpon>frmAEUnits.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAEUnits.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDTR.Designer.vb">
+      <DependentUpon>frmDTR.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDTR.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEmployee.Designer.vb">
+      <DependentUpon>frmEmployee.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEmployee.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHoliday.Designer.vb">
+      <DependentUpon>frmHoliday.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmHoliday.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLeave.Designer.vb">
+      <DependentUpon>frmLeave.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmLeave.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLeaveLib.Designer.vb">
+      <DependentUpon>frmLeaveLib.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmLeaveLib.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUnits.Designer.vb">
+      <DependentUpon>frmUnits.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmUnits.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dbConnect.vb" />
+    <Compile Include="fmrAEEducBack.Designer.vb">
+      <DependentUpon>fmrAEEducBack.vb</DependentUpon>
+    </Compile>
+    <Compile Include="fmrAEEducBack.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDTRSetup.Designer.vb">
+      <DependentUpon>frmDTRSetup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDTRSetup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.vb">
+      <DependentUpon>Form3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAEOtherInfo.Designer.vb">
+      <DependentUpon>frmAEOtherInfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAEOtherInfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAEPosition.Designer.vb">
+      <DependentUpon>frmAEPosition.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAEPosition.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAEReferencec.Designer.vb">
+      <DependentUpon>frmAEReferencec.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAEReferencec.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAETraining.Designer.vb">
+      <DependentUpon>frmAETraining.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAETraining.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAETravelOrder.Designer.vb">
+      <DependentUpon>frmAETravelOrder.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAETravelOrder.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAEVoluntary.Designer.vb">
+      <DependentUpon>frmAEVoluntary.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAEVoluntary.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAEWorkExp.Designer.vb">
+      <DependentUpon>frmAEWorkExp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAEWorkExp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAEChild.Designer.vb">
+      <DependentUpon>frmAEChild.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAEChild.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAEEligibility.Designer.vb">
+      <DependentUpon>frmAEEligibility.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAEEligibility.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.vb">
+      <DependentUpon>frmMain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPosition.Designer.vb">
+      <DependentUpon>frmPosition.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPosition.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTravelOrder.Designer.vb">
+      <DependentUpon>frmTravelOrder.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTravelOrder.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWaiting.Designer.vb">
+      <DependentUpon>frmWaiting.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmWaiting.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImageSetup.vb" />
+    <Compile Include="LeaveCredit.vb" />
+    <Compile Include="SearchPersonalInfo.Designer.vb">
+      <DependentUpon>SearchPersonalInfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SearchPersonalInfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Settings.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DTR.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>DTR1.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DTR1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>DTR1.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddEdit.resx">
+      <DependentUpon>frmAddEdit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAEServiceRecord.resx">
+      <DependentUpon>frmAEServiceRecord.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDeduction.resx">
+      <DependentUpon>frmDeduction.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDeductionType.resx">
+      <DependentUpon>frmDeductionType.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGradeInput.resx">
+      <DependentUpon>frmGradeInput.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPayrollEntry.resx">
+      <DependentUpon>frmPayrollEntry.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPayrollMain.resx">
+      <DependentUpon>frmPayrollMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSalaryGrade.resx">
+      <DependentUpon>frmSalaryGrade.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSelectGrade.resx">
+      <DependentUpon>frmSelectGrade.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmServiceRecord.resx">
+      <DependentUpon>frmServiceRecord.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTripTicket.resx">
+      <DependentUpon>frmTripTicket.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonalInfo.resx">
+      <DependentUpon>PersonalInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptTO.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptTO.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fmrPrintTO.resx">
+      <DependentUpon>fmrPrintTO.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMeeting.resx">
+      <DependentUpon>frmMeeting.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOT.resx">
+      <DependentUpon>frmOT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTimeCheck.resx">
+      <DependentUpon>frmTimeCheck.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAEDivHead.resx">
+      <DependentUpon>frmAEDivHead.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAEDU.resx">
+      <DependentUpon>frmAEDU.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDesignationUnit.resx">
+      <DependentUpon>frmDesignationUnit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDivHead.resx">
+      <DependentUpon>frmDivHead.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAEUnits.resx">
+      <DependentUpon>frmAEUnits.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDTR.resx">
+      <DependentUpon>frmDTR.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEmployee.resx">
+      <DependentUpon>frmEmployee.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHoliday.resx">
+      <DependentUpon>frmHoliday.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLeave.resx">
+      <DependentUpon>frmLeave.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLeaveLib.resx">
+      <DependentUpon>frmLeaveLib.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUnits.resx">
+      <DependentUpon>frmUnits.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fmrAEEducBack.resx">
+      <DependentUpon>fmrAEEducBack.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDTRSetup.resx">
+      <DependentUpon>frmDTRSetup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAEChild.resx">
+      <DependentUpon>frmAEChild.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAEEligibility.resx">
+      <DependentUpon>frmAEEligibility.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAEOtherInfo.resx">
+      <DependentUpon>frmAEOtherInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAEPosition.resx">
+      <DependentUpon>frmAEPosition.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAEReferencec.resx">
+      <DependentUpon>frmAEReferencec.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAETraining.resx">
+      <DependentUpon>frmAETraining.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAETravelOrder.resx">
+      <DependentUpon>frmAETravelOrder.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAEVoluntary.resx">
+      <DependentUpon>frmAEVoluntary.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAEWorkExp.resx">
+      <DependentUpon>frmAEWorkExp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPosition.resx">
+      <DependentUpon>frmPosition.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTravelOrder.resx">
+      <DependentUpon>frmTravelOrder.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWaiting.resx">
+      <DependentUpon>frmWaiting.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchPersonalInfo.resx">
+      <DependentUpon>SearchPersonalInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="BFARAutomatedSystem_TemporaryKey.pfx" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="ClassDiagram4.cd" />
+    <None Include="dsDTRPrint.xsc">
+      <DependentUpon>dsDTRPrint.xsd</DependentUpon>
+    </None>
+    <None Include="dsDTRPrint.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsDTRPrint.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="dsDTRPrint.xss">
+      <DependentUpon>dsDTRPrint.xsd</DependentUpon>
+    </None>
+    <None Include="dsPDF.xsc">
+      <DependentUpon>dsPDF.xsd</DependentUpon>
+    </None>
+    <None Include="dsPDF.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPDF.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="dsPDF.xss">
+      <DependentUpon>dsPDF.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\DataSources\MySql.Data.MySqlClient.CustomInstaller.datasource" />
+    <None Include="My Project\DataSources\MySql.Data.MySqlClient.MySqlBulkLoader.datasource" />
+    <None Include="My Project\DataSources\MySql.Data.MySqlClient.MySqlClientFactory.datasource" />
+    <None Include="My Project\DataSources\MySql.Data.MySqlClient.MySqlCommand.datasource" />
+    <None Include="My Project\DataSources\MySql.Data.MySqlClient.MySqlCommandBuilder.datasource" />
+    <None Include="My Project\DataSources\MySql.Data.MySqlClient.MySqlConnection.datasource" />
+    <None Include="My Project\DataSources\MySql.Data.MySqlClient.MySqlConnectionStringBuilder.datasource" />
+    <None Include="My Project\DataSources\MySql.Data.MySqlClient.MySqlDataAdapter.datasource" />
+    <None Include="My Project\DataSources\MySql.Data.MySqlClient.MySqlDataReader.datasource" />
+    <None Include="My Project\DataSources\MySql.Data.MySqlClient.MySqlError.datasource" />
+    <None Include="My Project\DataSources\MySql.Data.MySqlClient.MySqlException.datasource" />
+    <None Include="My Project\DataSources\MySql.Data.MySqlClient.MySqlHelper.datasource" />
+    <None Include="My Project\DataSources\MySql.Data.MySqlClient.MySqlInfoMessageEventArgs.datasource" />
+    <None Include="My Project\DataSources\MySql.Data.MySqlClient.MySqlInfoMessageEventHandler.datasource" />
+    <None Include="My Project\DataSources\MySql.Data.MySqlClient.MySqlParameter.datasource" />
+    <None Include="My Project\DataSources\MySql.Data.MySqlClient.MySqlParameterCollection.datasource" />
+    <None Include="My Project\DataSources\MySql.Data.MySqlClient.MySqlRowUpdatedEventArgs.datasource" />
+    <None Include="My Project\DataSources\MySql.Data.MySqlClient.MySqlRowUpdatedEventHandler.datasource" />
+    <None Include="My Project\DataSources\MySql.Data.MySqlClient.MySqlRowUpdatingEventArgs.datasource" />
+    <None Include="My Project\DataSources\MySql.Data.MySqlClient.MySqlRowUpdatingEventHandler.datasource" />
+    <None Include="My Project\DataSources\MySql.Data.MySqlClient.MySqlScript.datasource" />
+    <None Include="My Project\DataSources\MySql.Data.MySqlClient.MySqlScriptErrorEventArgs.datasource" />
+    <None Include="My Project\DataSources\MySql.Data.MySqlClient.MySqlScriptErrorEventHandler.datasource" />
+    <None Include="My Project\DataSources\MySql.Data.MySqlClient.MySqlScriptEventArgs.datasource" />
+    <None Include="My Project\DataSources\MySql.Data.MySqlClient.MySqlStatementExecutedEventHandler.datasource" />
+    <None Include="My Project\DataSources\MySql.Data.MySqlClient.MySqlTrace.datasource" />
+    <None Include="My Project\DataSources\MySql.Data.MySqlClient.MySqlTransaction.datasource" />
+    <None Include="My Project\DataSources\MySql.Data.MySqlClient.Properties.Resources.datasource" />
+    <None Include="My Project\DataSources\MySql.Data.Types.MySqlConversionException.datasource" />
+    <None Include="My Project\DataSources\MySql.Data.Types.MySqlDateTime.datasource" />
+    <None Include="My Project\DataSources\MySql.Data.Types.MySqlDecimal.datasource" />
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+    <None Include="pds.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="Microsoft.ReportViewer.DataVisualization">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.ReportViewer.ProcessingObjectModel">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.SqlServer.Types">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\print_button copy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Readme\Elmah.MySql.sql" />
+    <Content Include="App_Readme\Elmah.MySql.txt" />
+    <Content Include="App_Readme\Elmah.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

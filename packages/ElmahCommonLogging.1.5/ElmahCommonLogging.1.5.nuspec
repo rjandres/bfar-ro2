@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>ElmahCommonLogging</id>
+    <version>1.5</version>
+    <title>Elmah Common.Logging</title>
+    <authors>chrisdrobison</authors>
+    <owners>chrisdrobison</owners>
+    <projectUrl>https://bitbucket.org/chrisdrobison/elmah-common.logging</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Common.Logging library bindings for Elmah logging framework.</description>
+    <summary />
+    <tags>Common.Logging Elmah</tags>
+    <dependencies>
+      <dependency id="Common.Logging" version="3.1.0" />
+      <dependency id="Common.Logging.Core" version="3.1.0" />
+      <dependency id="elmah.corelibrary" version="1.2.2" />
+    </dependencies>
+  </metadata>
+</package>
