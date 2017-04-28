@@ -128,7 +128,7 @@ Partial Class frmSalaryGrade
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.BackColor = System.Drawing.Color.DimGray
         Me.ClientSize = New System.Drawing.Size(323, 369)
         Me.Controls.Add(Me.txtGrade)
         Me.Controls.Add(Me.cmdCancel)

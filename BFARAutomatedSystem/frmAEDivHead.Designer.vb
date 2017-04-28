@@ -142,7 +142,7 @@ Partial Class frmAEDivHead
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(10.0!, 18.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.BackColor = System.Drawing.Color.DimGray
         Me.ClientSize = New System.Drawing.Size(381, 148)
         Me.ControlBox = False
         Me.Controls.Add(Me.txtCTRNo)
@@ -158,6 +158,7 @@ Partial Class frmAEDivHead
         Me.Controls.Add(Me.Label1)
         Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
         Me.Name = "frmAEDivHead"
         Me.ShowInTaskbar = False

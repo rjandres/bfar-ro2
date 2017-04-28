@@ -124,7 +124,7 @@ Partial Class frmAEChild
         Me.AcceptButton = Me.cmdSave
         Me.AutoScaleDimensions = New System.Drawing.SizeF(10.0!, 18.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.Blue
+        Me.BackColor = System.Drawing.Color.DimGray
         Me.CancelButton = Me.cmdCancel
         Me.ClientSize = New System.Drawing.Size(470, 145)
         Me.ControlBox = False
@@ -139,6 +139,7 @@ Partial Class frmAEChild
         Me.Controls.Add(Me.Label1)
         Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold)
         Me.ForeColor = System.Drawing.Color.Transparent
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "frmAEChild"
         Me.ShowInTaskbar = False

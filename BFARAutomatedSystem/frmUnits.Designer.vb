@@ -136,7 +136,7 @@ Partial Class frmUnits
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.BackColor = System.Drawing.Color.DimGray
         Me.ClientSize = New System.Drawing.Size(471, 279)
         Me.ControlBox = False
         Me.Controls.Add(Me.txtHCode)
@@ -145,6 +145,7 @@ Partial Class frmUnits
         Me.Controls.Add(Me.cmdEdit)
         Me.Controls.Add(Me.cmdAdd)
         Me.Controls.Add(Me.GroupBox1)
+        Me.ForeColor = System.Drawing.Color.White
         Me.Name = "frmUnits"
         Me.ShowInTaskbar = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen

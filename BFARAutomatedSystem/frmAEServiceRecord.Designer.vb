@@ -54,7 +54,7 @@ Partial Class frmAEServiceRecord
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(18, 43)
+        Me.Label1.Location = New System.Drawing.Point(18, 51)
         Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(120, 17)
@@ -64,7 +64,7 @@ Partial Class frmAEServiceRecord
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(148, 43)
+        Me.Label2.Location = New System.Drawing.Point(148, 51)
         Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(40, 17)
@@ -74,7 +74,7 @@ Partial Class frmAEServiceRecord
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(367, 48)
+        Me.Label3.Location = New System.Drawing.Point(367, 56)
         Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(22, 17)
@@ -85,7 +85,7 @@ Partial Class frmAEServiceRecord
         '
         Me.dtFrom.CustomFormat = "MM/dd/yyyy"
         Me.dtFrom.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.dtFrom.Location = New System.Drawing.Point(319, 47)
+        Me.dtFrom.Location = New System.Drawing.Point(319, 55)
         Me.dtFrom.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.dtFrom.Name = "dtFrom"
         Me.dtFrom.Size = New System.Drawing.Size(17, 23)
@@ -95,7 +95,7 @@ Partial Class frmAEServiceRecord
         '
         Me.dtTo.CustomFormat = "MM/dd/yyyy"
         Me.dtTo.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.dtTo.Location = New System.Drawing.Point(534, 48)
+        Me.dtTo.Location = New System.Drawing.Point(534, 56)
         Me.dtTo.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.dtTo.Name = "dtTo"
         Me.dtTo.Size = New System.Drawing.Size(16, 23)
@@ -104,7 +104,7 @@ Partial Class frmAEServiceRecord
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(16, 86)
+        Me.Label4.Location = New System.Drawing.Point(16, 94)
         Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(113, 17)
@@ -114,7 +114,7 @@ Partial Class frmAEServiceRecord
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(16, 144)
+        Me.Label5.Location = New System.Drawing.Point(16, 152)
         Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(71, 17)
@@ -125,7 +125,7 @@ Partial Class frmAEServiceRecord
         '
         Me.txtPosition.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
         Me.txtPosition.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.FileSystem
-        Me.txtPosition.Location = New System.Drawing.Point(142, 86)
+        Me.txtPosition.Location = New System.Drawing.Point(142, 94)
         Me.txtPosition.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.txtPosition.Multiline = True
         Me.txtPosition.Name = "txtPosition"
@@ -134,7 +134,7 @@ Partial Class frmAEServiceRecord
         '
         'txtDepartment
         '
-        Me.txtDepartment.Location = New System.Drawing.Point(142, 147)
+        Me.txtDepartment.Location = New System.Drawing.Point(142, 155)
         Me.txtDepartment.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.txtDepartment.Multiline = True
         Me.txtDepartment.Name = "txtDepartment"
@@ -144,7 +144,7 @@ Partial Class frmAEServiceRecord
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(18, 212)
+        Me.Label6.Location = New System.Drawing.Point(18, 220)
         Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(125, 17)
@@ -154,7 +154,7 @@ Partial Class frmAEServiceRecord
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(322, 212)
+        Me.Label7.Location = New System.Drawing.Point(322, 220)
         Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(114, 17)
@@ -163,7 +163,7 @@ Partial Class frmAEServiceRecord
         '
         'txtSalary
         '
-        Me.txtSalary.Location = New System.Drawing.Point(144, 211)
+        Me.txtSalary.Location = New System.Drawing.Point(144, 219)
         Me.txtSalary.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.txtSalary.Name = "txtSalary"
         Me.txtSalary.Size = New System.Drawing.Size(148, 23)
@@ -171,7 +171,7 @@ Partial Class frmAEServiceRecord
         '
         'txtSalaryGrade
         '
-        Me.txtSalaryGrade.Location = New System.Drawing.Point(434, 213)
+        Me.txtSalaryGrade.Location = New System.Drawing.Point(434, 221)
         Me.txtSalaryGrade.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.txtSalaryGrade.Mask = "00-0"
         Me.txtSalaryGrade.Name = "txtSalaryGrade"
@@ -182,7 +182,7 @@ Partial Class frmAEServiceRecord
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(14, 267)
+        Me.Label8.Location = New System.Drawing.Point(14, 275)
         Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(178, 17)
@@ -195,7 +195,7 @@ Partial Class frmAEServiceRecord
         Me.cbStatus.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
         Me.cbStatus.FormattingEnabled = True
         Me.cbStatus.Items.AddRange(New Object() {"Regular", "Contructual", "Casual"})
-        Me.cbStatus.Location = New System.Drawing.Point(198, 264)
+        Me.cbStatus.Location = New System.Drawing.Point(198, 272)
         Me.cbStatus.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.cbStatus.Name = "cbStatus"
         Me.cbStatus.Size = New System.Drawing.Size(209, 25)
@@ -204,7 +204,7 @@ Partial Class frmAEServiceRecord
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(16, 11)
+        Me.Label9.Location = New System.Drawing.Point(16, 19)
         Me.Label9.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(115, 17)
@@ -214,7 +214,7 @@ Partial Class frmAEServiceRecord
         'optYes
         '
         Me.optYes.AutoSize = True
-        Me.optYes.Location = New System.Drawing.Point(144, 11)
+        Me.optYes.Location = New System.Drawing.Point(144, 19)
         Me.optYes.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.optYes.Name = "optYes"
         Me.optYes.Size = New System.Drawing.Size(53, 21)
@@ -226,7 +226,7 @@ Partial Class frmAEServiceRecord
         'optNo
         '
         Me.optNo.AutoSize = True
-        Me.optNo.Location = New System.Drawing.Point(206, 11)
+        Me.optNo.Location = New System.Drawing.Point(206, 19)
         Me.optNo.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.optNo.Name = "optNo"
         Me.optNo.Size = New System.Drawing.Size(46, 21)
@@ -238,7 +238,7 @@ Partial Class frmAEServiceRecord
         'cmdSave
         '
         Me.cmdSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.cmdSave.Location = New System.Drawing.Point(326, 295)
+        Me.cmdSave.Location = New System.Drawing.Point(326, 303)
         Me.cmdSave.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.cmdSave.Name = "cmdSave"
         Me.cmdSave.Size = New System.Drawing.Size(112, 31)
@@ -249,7 +249,7 @@ Partial Class frmAEServiceRecord
         'cmdCancel
         '
         Me.cmdCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.cmdCancel.Location = New System.Drawing.Point(447, 295)
+        Me.cmdCancel.Location = New System.Drawing.Point(447, 303)
         Me.cmdCancel.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.cmdCancel.Name = "cmdCancel"
         Me.cmdCancel.Size = New System.Drawing.Size(112, 31)
@@ -287,7 +287,7 @@ Partial Class frmAEServiceRecord
         'ckbPresent
         '
         Me.ckbPresent.AutoSize = True
-        Me.ckbPresent.Location = New System.Drawing.Point(398, 17)
+        Me.ckbPresent.Location = New System.Drawing.Point(398, 25)
         Me.ckbPresent.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.ckbPresent.Name = "ckbPresent"
         Me.ckbPresent.Size = New System.Drawing.Size(83, 21)
@@ -297,7 +297,7 @@ Partial Class frmAEServiceRecord
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(520, 213)
+        Me.Button1.Location = New System.Drawing.Point(520, 221)
         Me.Button1.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(34, 23)
@@ -307,14 +307,14 @@ Partial Class frmAEServiceRecord
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(218, 47)
+        Me.TextBox1.Location = New System.Drawing.Point(218, 55)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(100, 23)
         Me.TextBox1.TabIndex = 23
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(433, 48)
+        Me.TextBox2.Location = New System.Drawing.Point(433, 56)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(100, 23)
         Me.TextBox2.TabIndex = 23
@@ -323,8 +323,8 @@ Partial Class frmAEServiceRecord
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 17.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.Blue
-        Me.ClientSize = New System.Drawing.Size(602, 372)
+        Me.BackColor = System.Drawing.Color.DimGray
+        Me.ClientSize = New System.Drawing.Size(602, 339)
         Me.ControlBox = False
         Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.TextBox1)
@@ -355,9 +355,12 @@ Partial Class frmAEServiceRecord
         Me.Controls.Add(Me.Label1)
         Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.25!, System.Drawing.FontStyle.Bold)
         Me.ForeColor = System.Drawing.Color.White
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.Name = "frmAEServiceRecord"
+        Me.Opacity = 0.0R
         Me.ShowInTaskbar = False
+        Me.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Work Experience"
         Me.ResumeLayout(False)

@@ -90,6 +90,7 @@ Partial Class frmDeduction
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.DimGray
         Me.ClientSize = New System.Drawing.Size(699, 648)
         Me.Controls.Add(Me.GroupBox1)
         Me.Name = "frmDeduction"

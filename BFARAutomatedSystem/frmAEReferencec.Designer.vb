@@ -134,7 +134,7 @@ Partial Class frmAEReferencec
         Me.AcceptButton = Me.cmdSave
         Me.AutoScaleDimensions = New System.Drawing.SizeF(10.0!, 18.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.Blue
+        Me.BackColor = System.Drawing.Color.DimGray
         Me.CancelButton = Me.cmdCancel
         Me.ClientSize = New System.Drawing.Size(455, 170)
         Me.ControlBox = False
@@ -150,6 +150,7 @@ Partial Class frmAEReferencec
         Me.Controls.Add(Me.txtName)
         Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold)
         Me.ForeColor = System.Drawing.Color.White
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
         Me.Name = "frmAEReferencec"
         Me.ShowInTaskbar = False

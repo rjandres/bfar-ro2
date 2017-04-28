@@ -42,44 +42,46 @@ Partial Class frmLeaveLib
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(16, 30)
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(19, 35)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(71, 13)
+        Me.Label1.Size = New System.Drawing.Size(90, 15)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Leave Code :"
         '
         'txtLeave
         '
-        Me.txtLeave.Location = New System.Drawing.Point(94, 30)
+        Me.txtLeave.Location = New System.Drawing.Point(110, 35)
         Me.txtLeave.Name = "txtLeave"
         Me.txtLeave.ReadOnly = True
-        Me.txtLeave.Size = New System.Drawing.Size(100, 20)
+        Me.txtLeave.Size = New System.Drawing.Size(116, 21)
         Me.txtLeave.TabIndex = 1
         '
         'txtDesc
         '
-        Me.txtDesc.Location = New System.Drawing.Point(94, 56)
+        Me.txtDesc.Location = New System.Drawing.Point(110, 65)
         Me.txtDesc.Multiline = True
         Me.txtDesc.Name = "txtDesc"
         Me.txtDesc.ReadOnly = True
-        Me.txtDesc.Size = New System.Drawing.Size(229, 42)
+        Me.txtDesc.Size = New System.Drawing.Size(266, 48)
         Me.txtDesc.TabIndex = 3
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(16, 56)
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(19, 65)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(66, 13)
+        Me.Label2.Size = New System.Drawing.Size(88, 15)
         Me.Label2.TabIndex = 2
         Me.Label2.Text = "Description :"
         '
         'GroupBox1
         '
         Me.GroupBox1.Controls.Add(Me.lvLeave)
-        Me.GroupBox1.Location = New System.Drawing.Point(18, 98)
+        Me.GroupBox1.Location = New System.Drawing.Point(21, 113)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(386, 246)
+        Me.GroupBox1.Size = New System.Drawing.Size(450, 284)
         Me.GroupBox1.TabIndex = 4
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Type of Leave/s"
@@ -88,10 +90,10 @@ Partial Class frmLeaveLib
         '
         Me.lvLeave.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader1, Me.ColumnHeader2, Me.ColumnHeader3})
         Me.lvLeave.FullRowSelect = True
-        Me.lvLeave.Location = New System.Drawing.Point(15, 22)
+        Me.lvLeave.Location = New System.Drawing.Point(17, 25)
         Me.lvLeave.MultiSelect = False
         Me.lvLeave.Name = "lvLeave"
-        Me.lvLeave.Size = New System.Drawing.Size(353, 213)
+        Me.lvLeave.Size = New System.Drawing.Size(411, 245)
         Me.lvLeave.TabIndex = 0
         Me.lvLeave.UseCompatibleStateImageBehavior = False
         Me.lvLeave.View = System.Windows.Forms.View.Details
@@ -113,9 +115,10 @@ Partial Class frmLeaveLib
         'cmdAdd
         '
         Me.cmdAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.cmdAdd.Location = New System.Drawing.Point(329, 19)
+        Me.cmdAdd.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmdAdd.Location = New System.Drawing.Point(384, 22)
         Me.cmdAdd.Name = "cmdAdd"
-        Me.cmdAdd.Size = New System.Drawing.Size(75, 23)
+        Me.cmdAdd.Size = New System.Drawing.Size(87, 27)
         Me.cmdAdd.TabIndex = 5
         Me.cmdAdd.Text = "Add"
         Me.cmdAdd.UseVisualStyleBackColor = True
@@ -123,9 +126,10 @@ Partial Class frmLeaveLib
         'cmdEdit
         '
         Me.cmdEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.cmdEdit.Location = New System.Drawing.Point(329, 46)
+        Me.cmdEdit.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmdEdit.Location = New System.Drawing.Point(384, 53)
         Me.cmdEdit.Name = "cmdEdit"
-        Me.cmdEdit.Size = New System.Drawing.Size(75, 23)
+        Me.cmdEdit.Size = New System.Drawing.Size(87, 27)
         Me.cmdEdit.TabIndex = 6
         Me.cmdEdit.Text = "Edit"
         Me.cmdEdit.UseVisualStyleBackColor = True
@@ -133,9 +137,10 @@ Partial Class frmLeaveLib
         'cmdDelete
         '
         Me.cmdDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.cmdDelete.Location = New System.Drawing.Point(329, 75)
+        Me.cmdDelete.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmdDelete.Location = New System.Drawing.Point(384, 87)
         Me.cmdDelete.Name = "cmdDelete"
-        Me.cmdDelete.Size = New System.Drawing.Size(75, 23)
+        Me.cmdDelete.Size = New System.Drawing.Size(87, 27)
         Me.cmdDelete.TabIndex = 7
         Me.cmdDelete.Text = "Delete"
         Me.cmdDelete.UseVisualStyleBackColor = True
@@ -143,26 +148,27 @@ Partial Class frmLeaveLib
         'cmdClose
         '
         Me.cmdClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.cmdClose.Location = New System.Drawing.Point(330, 346)
+        Me.cmdClose.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmdClose.Location = New System.Drawing.Point(385, 399)
         Me.cmdClose.Name = "cmdClose"
-        Me.cmdClose.Size = New System.Drawing.Size(75, 23)
+        Me.cmdClose.Size = New System.Drawing.Size(87, 27)
         Me.cmdClose.TabIndex = 7
         Me.cmdClose.Text = "Close"
         Me.cmdClose.UseVisualStyleBackColor = True
         '
         'txtCTR
         '
-        Me.txtCTR.Location = New System.Drawing.Point(19, 348)
+        Me.txtCTR.Location = New System.Drawing.Point(22, 402)
         Me.txtCTR.Name = "txtCTR"
-        Me.txtCTR.Size = New System.Drawing.Size(100, 20)
+        Me.txtCTR.Size = New System.Drawing.Size(116, 21)
         Me.txtCTR.TabIndex = 8
         '
         'frmLeaveLib
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(418, 378)
+        Me.BackColor = System.Drawing.Color.DimGray
+        Me.ClientSize = New System.Drawing.Size(488, 436)
         Me.ControlBox = False
         Me.Controls.Add(Me.txtCTR)
         Me.Controls.Add(Me.cmdDelete)
@@ -174,6 +180,7 @@ Partial Class frmLeaveLib
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.txtLeave)
         Me.Controls.Add(Me.Label1)
+        Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.Name = "frmLeaveLib"
         Me.ShowInTaskbar = False

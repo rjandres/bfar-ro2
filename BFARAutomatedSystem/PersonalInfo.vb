@@ -72,6 +72,28 @@ Public Class PersonalInfo
     Public QSave As Integer
     Public Permanent As String
 
+    'Create binding source
+    Public Function CallEmployee() As DataTable
+        Dim dt As New DataTable
+        Using cn As New MySql.Data.MySqlClient.MySqlConnection With
+            {
+                .ConnectionString = Builder.ConnectionString
+            }
+            Using cmd As New MySql.Data.MySqlClient.MySqlCommand With
+                {
+                    .Connection = cn,
+                    .CommandText = strSQL
+                }
+                cn.Open()
+                dt.Load(cmd.ExecuteReader)
+            End Using
+        End Using
+        Return dt
+    End Function
+
+
+    'end binding
+
     Private Sub cmdNewSave_Click(sender As Object, e As EventArgs) Handles cmdNewSave.Click
         On Error Resume Next
 
@@ -301,8 +323,8 @@ Public Class PersonalInfo
             cmdNewSave.Text = "New Record"
             cmdUpdateCancel.Text = "Update Record"
             btnAction = 0
-            End If
-            CONNECTION.Close()
+        End If
+        CONNECTION.Close()
     End Sub
     'Enable Update in Personal Info
     Private Sub cmdUpdateCancel_Click(sender As Object, e As EventArgs) Handles cmdUpdateCancel.Click
@@ -422,10 +444,7 @@ Public Class PersonalInfo
         'On Error Resume Next
         Dim arrImage() As Byte
 
-        Dim da As New MySqlDataAdapter(strSQL, CONNECTION)
-        da.Fill(ds, "PersonalInfo")
-        On Error Resume Next
-        With ds.Tables("PersonalInfo").Rows(pNav)
+        With CallEmployee.Rows(pNav)
             Me.txtTINNo.Text = IIf(Not IsDBNull(.Item("tin")), .Item("tin"), "")
             Me.txtCP.Text = IIf(Not IsDBNull(.Item("cellphone")), .Item("cellphone"), "")
             Me.txtEmail.Text = IIf(Not IsDBNull(.Item("email")), .Item("email"), "")
@@ -569,27 +588,14 @@ Public Class PersonalInfo
             End If
 
         End With
-        MaxRow = ds.Tables("personalInfo").Rows.Count
-        da.Dispose()
-        ds.Clear()
+        MaxRow = CallEmployee.Rows.Count
+
         txtTotNum.Text = pNav + 1 & " of " & MaxRow
-        'CONNECTION.Close()
     End Sub
 
     Public Sub callPersonalInfo()
-        CONNECTION.Open()
         FillData()
-        callFBackground()
-        callChild()
-        callEducation()
-        callCivilService()
-        callWorkExperience()
-        callTainings()
-        callVoluntary()
-        callOthers()
-        callQuestion()
-        callReference()
-        CONNECTION.Close()
+
         TabPage2.Enabled = True
         TabPage3.Enabled = True
         TabPage4.Enabled = True
@@ -604,36 +610,70 @@ Public Class PersonalInfo
         End If
 
     End Sub
+    Private Sub TabControl1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles TabControl1.SelectedIndexChanged
+        If TabControl1.SelectedTab Is TabPage2 Then
+            callFBackground()
+            callChild()
+        ElseIf TabControl1.SelectedTab Is TabPage3 Then
+            callEducation()
+            callCivilService()
+        ElseIf TabControl1.SelectedTab Is TabPage4 Then
+            callWorkExperience()
+            callReference()
+        ElseIf TabControl1.SelectedTab Is TabPage5 Then
+            callVoluntary()
+            callOthers()
+
+        ElseIf TabControl1.SelectedTab Is TabPage6 Then
+            callTainings()
+        ElseIf TabControl1.SelectedTab Is TabPage7 Then
+            callQuestion()
+        End If
+    End Sub
 
     'Display Employee  Information in a FORM
     '-------------------------------------------------
+    Public Function FBackground() As DataTable
+        Dim dt As New DataTable
+        Using cn As New MySql.Data.MySqlClient.MySqlConnection With
+            {
+                .ConnectionString = Builder.ConnectionString
+            }
+            Using cmd As New MySql.Data.MySqlClient.MySqlCommand With
+                {
+                    .Connection = cn,
+                    .CommandText = "SELECT * from tbl_emp_fbackground where empno='" & txtEmpNo.Text & "' order by empno"
+                }
+                ' MONTH(DateLog)=" & cbMonth.SelectedIndex & " AND YEAR(DateLog) = '" & txtYear.Value & "' AND 
+                cn.Open()
+                dt.Load(cmd.ExecuteReader)
+            End Using
+        End Using
+        Return dt
+    End Function
+
     Private Sub callFBackground()
         On Error Resume Next
-        strSQLFBackground = "SELECT * from tbl_emp_fbackground where empno='" & txtEmpNo.Text & "' order by empno"
-        'CONNECTION.Open()
-        Dim daFBackground As New MySqlDataAdapter(strSQLFBackground, CONNECTION)
-
-        daFBackground.Fill(dsFBackground, "FBackground")
-        FamilyBGCount = dsFBackground.Tables("FBackground").Rows.Count
-        If FamilyBGCount = 0 Then
-            txtSSurname.Text = "N/A"
-            txtSFirstName.Text = "N/A"
-            txtSMiddleName.Text = "N/A"
-            txtSExtension.Text = "N/A"
-            txtSOccupation.Text = "N/A"
-            txtSEmployer.Text = "N/A"
-            txtSEmpAddress.Text = "N/A"
-            txtSTelNo.Text = "N/A"
-            txtFSurname.Text = "N/A"
-            txtFFirstName.Text = "N/A"
-            txtFMiddleName.Text = "N/A"
-            txtFExtension.Text = "N/A"
-            txtMMaiden.Text = "N/A"
-            txtMSurname.Text = "N/A"
-            txtMFirstName.Text = "N/A"
-            txtMMiddleName.Text = "N/A"
-        Else
-            With dsFBackground.Tables("FBackground").Rows(0)
+        FamilyBGCount = FBackground.Rows.Count
+            If FamilyBGCount = 0 Then
+                txtSSurname.Text = "N/A"
+                txtSFirstName.Text = "N/A"
+                txtSMiddleName.Text = "N/A"
+                txtSExtension.Text = "N/A"
+                txtSOccupation.Text = "N/A"
+                txtSEmployer.Text = "N/A"
+                txtSEmpAddress.Text = "N/A"
+                txtSTelNo.Text = "N/A"
+                txtFSurname.Text = "N/A"
+                txtFFirstName.Text = "N/A"
+                txtFMiddleName.Text = "N/A"
+                txtFExtension.Text = "N/A"
+                txtMMaiden.Text = "N/A"
+                txtMSurname.Text = "N/A"
+                txtMFirstName.Text = "N/A"
+                txtMMiddleName.Text = "N/A"
+            Else
+            With FBackground.Rows(0)
                 txtSSurname.Text = .Item("ssname")
                 txtSFirstName.Text = .Item("sfirstname")
                 txtSMiddleName.Text = .Item("smi")
@@ -651,26 +691,39 @@ Public Class PersonalInfo
                 txtMFirstName.Text = .Item("mmfirstname")
                 txtMMiddleName.Text = .Item("mmi")
             End With
-        End If
-        daFBackground.Dispose()
-        dsFBackground.Reset()
+            End If
         'CONNECTION.Close()
     End Sub
+
+    Public Function Children() As DataTable
+        Dim dt As New DataTable
+        Using cn As New MySql.Data.MySqlClient.MySqlConnection With
+            {
+                .ConnectionString = Builder.ConnectionString
+            }
+            Using cmd As New MySql.Data.MySqlClient.MySqlCommand With
+                {
+                    .Connection = cn,
+                    .CommandText = "SELECT * from tbl_child where empno = '" & txtEmpNo.Text & "'order by DateOfBirth"
+                }
+                ' MONTH(DateLog)=" & cbMonth.SelectedIndex & " AND YEAR(DateLog) = '" & txtYear.Value & "' AND 
+                cn.Open()
+                dt.Load(cmd.ExecuteReader)
+            End Using
+        End Using
+        Return dt
+    End Function
     Private Sub callChild()
         'On Error Resume Next
         Dim i As Integer
-        strSQLChild = "SELECT * from tbl_child where empno = '" & txtEmpNo.Text & "'order by DateOfBirth"
-        'CONNECTION.Open()
-        cmdChild = New MySqlCommand(strSQLChild, CONNECTION)
-        drChild = cmdChild.ExecuteReader()
 
         lvChild.Items.Clear()
-        Do While drChild.Read()
+        Do Until i = Children.Rows.Count
             Dim lv As ListViewItem = lvChild.Items.Add(drChild.Item(0))
             lv.SubItems.Add(drChild.Item(1))
             lv.SubItems.Add(drChild.Item(2))
             lv.SubItems.Add(drChild.Item(3))
-
+            i += 1
         Loop
 
         txtChildTotal.Text = lvChild.Items.Count
@@ -681,34 +734,50 @@ Public Class PersonalInfo
             Button3.Enabled = True
             Button4.Enabled = True
         End If
-        drChild.Close()
-        cmdChild.Dispose()
+
         'CONNECTION.Close()
     End Sub
+
+    Public Function Education() As DataTable
+        Dim dt As New DataTable
+        Using cn As New MySql.Data.MySqlClient.MySqlConnection With
+            {
+                .ConnectionString = Builder.ConnectionString
+            }
+            Using cmd As New MySql.Data.MySqlClient.MySqlCommand With
+                {
+                    .Connection = cn,
+                    .CommandText = "SELECT * from tbl_educational where empno = '" & txtEmpNo.Text & "'order by ctrno"
+                }
+                ' MONTH(DateLog)=" & cbMonth.SelectedIndex & " AND YEAR(DateLog) = '" & txtYear.Value & "' AND 
+                cn.Open()
+                dt.Load(cmd.ExecuteReader)
+            End Using
+        End Using
+        Return dt
+    End Function
+
     Private Sub callEducation()
         'On Error Resume Next
 
-        strSQLEduc = "SELECT * from tbl_educational where empno = '" & txtEmpNo.Text & "'order by ctrno"
-        'CONNECTION.Open()
-        cmdEduc = New MySqlCommand(strSQLEduc, CONNECTION)
-        drEduc = cmdEduc.ExecuteReader()
+        Dim i As Integer
+
 
         lvEducation.Items.Clear()
-        Do While drEduc.Read()
-            Dim lv As ListViewItem = lvEducation.Items.Add(drEduc.Item(1)) 'Emp No
-            lv.SubItems.Add(drEduc.Item(2)) 'Level
-            lv.SubItems.Add(drEduc.Item(3)) 'Name of School
-            lv.SubItems.Add(drEduc.Item(4)) 'Degree
-            lv.SubItems.Add(drEduc.Item(5)) 'Year Graduate
-            lv.SubItems.Add(drEduc.Item(9)) 'Highest Grade
-            lv.SubItems.Add(drEduc.Item(6)) 'From
-            lv.SubItems.Add(drEduc.Item(7)) 'To
-            lv.SubItems.Add(drEduc.Item(8)) 'Awards
-            lv.SubItems.Add(drEduc.Item(0)) 'Awards
+        Do Until i = Education.Rows.Count
+            Dim lv As ListViewItem = lvEducation.Items.Add(Education.Rows(i).Item(1)) 'Emp No
+            lv.SubItems.Add(Education.Rows(i).Item(2)) 'Level
+            lv.SubItems.Add(Education.Rows(i).Item(3)) 'Name of School
+            lv.SubItems.Add(Education.Rows(i).Item(4)) 'Degree
+            lv.SubItems.Add(Education.Rows(i).Item(5)) 'Year Graduate
+            lv.SubItems.Add(Education.Rows(i).Item(9)) 'Highest Grade
+            lv.SubItems.Add(Education.Rows(i).Item(6)) 'From
+            lv.SubItems.Add(Education.Rows(i).Item(7)) 'To
+            lv.SubItems.Add(Education.Rows(i).Item(8)) 'Awards
+            lv.SubItems.Add(Education.Rows(i).Item(0)) 'Awards
+            i += 1
         Loop
-        drEduc.Close()
-        cmdEduc.Dispose()
-        'CONNECTION.Close()
+        
         If lvEducation.Items.Count = 0 Then
             Button18.Enabled = False
             cmdEducUpdateCancel.Enabled = False
@@ -717,29 +786,44 @@ Public Class PersonalInfo
             cmdEducUpdateCancel.Enabled = True
         End If
     End Sub
+
+    Public Function CivilService() As DataTable
+        Dim dt As New DataTable
+        Using cn As New MySql.Data.MySqlClient.MySqlConnection With
+            {
+                .ConnectionString = Builder.ConnectionString
+            }
+            Using cmd As New MySql.Data.MySqlClient.MySqlCommand With
+                {
+                    .Connection = cn,
+                    .CommandText = "SELECT * from tbl_eligibility where empno = '" & txtEmpNo.Text & "'order by ctrno"
+                }
+                cn.Open()
+                dt.Load(cmd.ExecuteReader)
+            End Using
+        End Using
+        Return dt
+    End Function
+
     Private Sub callCivilService()
         'On Error Resume Next
         Dim i As Integer
-        strSQLCivil = "SELECT * from tbl_eligibility where empno = '" & txtEmpNo.Text & "'order by ctrno"
-        'CONNECTION.Open()
-        cmdCivil = New MySqlCommand(strSQLCivil, CONNECTION)
-        drCivil = cmdCivil.ExecuteReader()
+        If CivilService.Rows.Count = 0 Then
+            Exit Sub
+        End If
 
         lvCivilService.Items.Clear()
-        Do While drCivil.Read()
-            Dim lv As ListViewItem = lvCivilService.Items.Add(drCivil.Item(0))
-            lv.SubItems.Add(drCivil.Item(1))
-            lv.SubItems.Add(drCivil.Item(2))
-            lv.SubItems.Add(drCivil.Item(3))
-            lv.SubItems.Add(drCivil.Item(4))
-            lv.SubItems.Add(drCivil.Item(5))
-            lv.SubItems.Add(drCivil.Item(6))
-            lv.SubItems.Add(drCivil.Item(7))
-
+        Do Until i = CivilService.Rows.Count
+            Dim lv As ListViewItem = lvCivilService.Items.Add(CivilService.Rows(i).Item(0))
+            lv.SubItems.Add(CivilService.Rows(i).Item(1))
+            lv.SubItems.Add(CivilService.Rows(i).Item(2))
+            lv.SubItems.Add(CivilService.Rows(i).Item(3))
+            lv.SubItems.Add(CivilService.Rows(i).Item(4))
+            lv.SubItems.Add(CivilService.Rows(i).Item(5))
+            lv.SubItems.Add(CivilService.Rows(i).Item(6))
+            lv.SubItems.Add(CivilService.Rows(i).Item(7))
+            i += 1
         Loop
-        drCivil.Close()
-        cmdCivil.Dispose()
-        'CONNECTION.Close()
 
         If lvCivilService.Items.Count = 0 Then
             Button19.Enabled = False
@@ -749,31 +833,43 @@ Public Class PersonalInfo
             cmdCivilUpdateCancel.Enabled = True
         End If
     End Sub
+
+    Public Function WorkExp() As DataTable
+        Dim dt As New DataTable
+        Using cn As New MySql.Data.MySqlClient.MySqlConnection With
+            {
+                .ConnectionString = Builder.ConnectionString
+            }
+            Using cmd As New MySql.Data.MySqlClient.MySqlCommand With
+                {
+                    .Connection = cn,
+                    .CommandText = "SELECT * from tbl_emp_experience where empno = '" & txtEmpNo.Text & "'order by ctrno"
+                }
+                cn.Open()
+                dt.Load(cmd.ExecuteReader)
+            End Using
+        End Using
+        Return dt
+    End Function
+
     Private Sub callWorkExperience()
         'On Error Resume Next
         Dim i As Integer
-        strSQLWork = "SELECT * from tbl_emp_experience where empno = '" & txtEmpNo.Text & "' order by date('InclusiveFrom')"
-        'CONNECTION.Open()
-        cmdWork = New MySqlCommand(strSQLWork, CONNECTION)
-        drWork = cmdWork.ExecuteReader()
 
         lvWorkExp.Items.Clear()
-        Do While drWork.Read()
-            Dim lv As ListViewItem = lvWorkExp.Items.Add(drWork.Item(1))
-            lv.SubItems.Add(drWork.Item(2))
-            lv.SubItems.Add(drWork.Item(3))
-            lv.SubItems.Add(drWork.Item(4))
-            lv.SubItems.Add(drWork.Item(5))
-            lv.SubItems.Add(drWork.Item(6))
-            lv.SubItems.Add(drWork.Item(7))
-            lv.SubItems.Add(drWork.Item(8))
-            lv.SubItems.Add(drWork.Item(9))
-            lv.SubItems.Add(drWork.Item(0))
-
+        Do Until i = WorkExp.Rows.Count
+            Dim lv As ListViewItem = lvWorkExp.Items.Add(WorkExp.Rows(i).Item(1))
+            lv.SubItems.Add(WorkExp.Rows(i).Item(2))
+            lv.SubItems.Add(WorkExp.Rows(i).Item(3))
+            lv.SubItems.Add(WorkExp.Rows(i).Item(4))
+            lv.SubItems.Add(WorkExp.Rows(i).Item(5))
+            lv.SubItems.Add(WorkExp.Rows(i).Item(6))
+            lv.SubItems.Add(WorkExp.Rows(i).Item(7))
+            lv.SubItems.Add(WorkExp.Rows(i).Item(8))
+            lv.SubItems.Add(WorkExp.Rows(i).Item(9))
+            lv.SubItems.Add(WorkExp.Rows(i).Item(0))
+            i += 1
         Loop
-        drWork.Close()
-        cmdWork.Dispose()
-        'CONNECTION.Close()
         If lvWorkExp.Items.Count = 0 Then
             cmdWorkUpdateCancel.Enabled = False
             Button16.Enabled = False
@@ -782,30 +878,41 @@ Public Class PersonalInfo
             Button16.Enabled = True
         End If
     End Sub
+
+    Public Function Tainings() As DataTable
+        Dim dt As New DataTable
+        Using cn As New MySql.Data.MySqlClient.MySqlConnection With
+            {
+                .ConnectionString = Builder.ConnectionString
+            }
+            Using cmd As New MySql.Data.MySqlClient.MySqlCommand With
+                {
+                    .Connection = cn,
+                    .CommandText = "SELECT * from tbl_trainings where empno = '" & txtEmpNo.Text & "' order by DATE('InclusiveDatesFrom') Desc"
+                }
+                cn.Open()
+                dt.Load(cmd.ExecuteReader)
+            End Using
+        End Using
+        Return dt
+    End Function
     Public Sub callTainings()
         On Error Resume Next
         Dim i As Integer
-        strSQLTraining = "SELECT * from tbl_trainings where empno = '" & txtEmpNo.Text & "' order by DATE('InclusiveDatesFrom') Desc"
-        'CONNECTION.Open()
-        cmdTraining = New MySqlCommand(strSQLTraining, CONNECTION)
-        drTraining = cmdTraining.ExecuteReader()
 
         lvTrainings.Items.Clear()
-        Do While drTraining.Read()
-            Dim lv As ListViewItem = lvTrainings.Items.Add(drTraining.Item(0))
-            lv.SubItems.Add(drTraining.Item(1))
-            lv.SubItems.Add(drTraining.Item(2))
-            lv.SubItems.Add(drTraining.Item(3))
-            lv.SubItems.Add(drTraining.Item(4))
-            lv.SubItems.Add(drTraining.Item(5))
-            lv.SubItems.Add(drTraining.Item(6))
-            lv.SubItems.Add(drTraining.Item(7))
-
-
+        Do Until i = Tainings.Rows.Count
+            Dim lv As ListViewItem = lvTrainings.Items.Add(Tainings.Rows(i).Item(0))
+            lv.SubItems.Add(Tainings.Rows(i).Item(1))
+            lv.SubItems.Add(Tainings.Rows(i).Item(2))
+            lv.SubItems.Add(Tainings.Rows(i).Item(3))
+            lv.SubItems.Add(Tainings.Rows(i).Item(4))
+            lv.SubItems.Add(Tainings.Rows(i).Item(5))
+            lv.SubItems.Add(Tainings.Rows(i).Item(6))
+            lv.SubItems.Add(Tainings.Rows(i).Item(7))
+            i += 1
         Loop
-        drTraining.Close()
-        cmdTraining.Dispose()
-        'CONNECTION.Close()
+
         If lvTrainings.Items.Count = 0 Then
             cmdTrainingUpdate.Enabled = False
             cmdTrainingDelete.Enabled = False
@@ -814,28 +921,40 @@ Public Class PersonalInfo
             cmdTrainingDelete.Enabled = True
         End If
     End Sub
+    Public Function Voluntary() As DataTable
+        Dim dt As New DataTable
+        Using cn As New MySql.Data.MySqlClient.MySqlConnection With
+            {
+                .ConnectionString = Builder.ConnectionString
+            }
+            Using cmd As New MySql.Data.MySqlClient.MySqlCommand With
+                {
+                    .Connection = cn,
+                    .CommandText = "SELECT * from tbl_voluntarywork where empno = '" & txtEmpNo.Text & "'order by ctrno"
+                }
+                cn.Open()
+                dt.Load(cmd.ExecuteReader)
+            End Using
+        End Using
+        Return dt
+    End Function
+
     Private Sub callVoluntary()
         'On Error Resume Next
-        Dim i As Integer
-        strSQLVoluntary = "SELECT * from tbl_voluntarywork where empno = '" & txtEmpNo.Text & "'order by ctrno"
-        'CONNECTION.Open()
-        cmdVoluntary = New MySqlCommand(strSQLVoluntary, CONNECTION)
-        drVoluntary = cmdVoluntary.ExecuteReader()
+       Dim i As Integer
 
         lvVoluntary.Items.Clear()
-        Do While drVoluntary.Read()
-            Dim lv As ListViewItem = lvVoluntary.Items.Add(drVoluntary.Item(6))
-            lv.SubItems.Add(drVoluntary.Item(1))
-            lv.SubItems.Add(drVoluntary.Item(2))
-            lv.SubItems.Add(drVoluntary.Item(3))
-            lv.SubItems.Add(drVoluntary.Item(4))
-            lv.SubItems.Add(drVoluntary.Item(5))
-            lv.SubItems.Add(drVoluntary.Item(0))
-
+        Do Until i = Voluntary.Rows.Count
+            Dim lv As ListViewItem = lvVoluntary.Items.Add(Voluntary.Rows(i).Item(6))
+            lv.SubItems.Add(Voluntary.Rows(i).Item(1))
+            lv.SubItems.Add(Voluntary.Rows(i).Item(2))
+            lv.SubItems.Add(Voluntary.Rows(i).Item(3))
+            lv.SubItems.Add(Voluntary.Rows(i).Item(4))
+            lv.SubItems.Add(Voluntary.Rows(i).Item(5))
+            lv.SubItems.Add(Voluntary.Rows(i).Item(0))
+            i += 1
         Loop
-        drVoluntary.Close()
-        cmdVoluntary.Dispose()
-        'CONNECTION.Close()
+
         If lvVoluntary.Items.Count = 0 Then
             cmdVolUpdateCancel.Enabled = False
             cmdVWDelete.Enabled = False
@@ -844,26 +963,38 @@ Public Class PersonalInfo
             cmdVWDelete.Enabled = True
         End If
     End Sub
+    Public Function dtReference() As DataTable
+        Dim dt As New DataTable
+        Using cn As New MySql.Data.MySqlClient.MySqlConnection With
+            {
+                .ConnectionString = Builder.ConnectionString
+            }
+            Using cmd As New MySql.Data.MySqlClient.MySqlCommand With
+                {
+                    .Connection = cn,
+                    .CommandText = "SELECT * from tbl_reference where empno = '" & txtEmpNo.Text & "'order by ctrno"
+                }
+                cn.Open()
+                dt.Load(cmd.ExecuteReader)
+            End Using
+        End Using
+        Return dt
+    End Function
+
     Private Sub callReference()
         'On Error Resume Next
         Dim i As Integer
-        strSQLRef = "SELECT * from tbl_reference where empno = '" & txtEmpNo.Text & "'order by ctrno"
-        'CONNECTION.Open()
-        cmdRef = New MySqlCommand(strSQLRef, CONNECTION)
-        drRef = cmdRef.ExecuteReader()
 
         lvRef.Items.Clear()
-        Do While drRef.Read()
-            Dim lv As ListViewItem = lvRef.Items.Add(drRef.Item(0))
-            lv.SubItems.Add(drRef.Item(1))
-            lv.SubItems.Add(drRef.Item(2))
-            lv.SubItems.Add(drRef.Item(3))
-            lv.SubItems.Add(drRef.Item(4))
-
+        Do Until i = dtReference.Rows.Count
+            Dim lv As ListViewItem = lvRef.Items.Add(dtReference.Rows(i).Item(0))
+            lv.SubItems.Add(dtReference.Rows(i).Item(1))
+            lv.SubItems.Add(dtReference.Rows(i).Item(2))
+            lv.SubItems.Add(dtReference.Rows(i).Item(3))
+            lv.SubItems.Add(dtReference.Rows(i).Item(4))
+            i += 1
         Loop
-        drRef.Close()
-        cmdRef.Dispose()
-        'CONNECTION.Close()
+       
         If lvRef.Items.Count = 0 Then
             Button5.Enabled = False
             Button17.Enabled = False
@@ -872,48 +1003,74 @@ Public Class PersonalInfo
             Button17.Enabled = True
         End If
     End Sub
+    Public Function OtherInfo() As DataTable
+        Dim dt As New DataTable
+        Using cn As New MySql.Data.MySqlClient.MySqlConnection With
+            {
+                .ConnectionString = Builder.ConnectionString
+            }
+            Using cmd As New MySql.Data.MySqlClient.MySqlCommand With
+                {
+                    .Connection = cn,
+                    .CommandText = "SELECT * from tbl_otherinfo where empno = '" & txtEmpNo.Text & "'order by ctrno"
+                }
+                cn.Open()
+                dt.Load(cmd.ExecuteReader)
+            End Using
+        End Using
+        Return dt
+    End Function
+
+
     Private Sub callOthers()
         'On Error Resume Next
         Dim i As Integer
-        strSQLOthers = "SELECT * from tbl_otherinfo where empno = '" & txtEmpNo.Text & "'order by ctrno"
-        'CONNECTION.Open()
-        cmdOthers = New MySqlCommand(strSQLOthers, CONNECTION)
-        drOthers = cmdOthers.ExecuteReader()
+
 
         lv33.Items.Clear()
         lv34.Items.Clear()
         lv35.Items.Clear()
-        Do While drOthers.Read()
-            If drOthers.Item(1) = "33" Then
-                Dim lv As ListViewItem = lv33.Items.Add(drOthers.Item(0))
-                lv.SubItems.Add(drOthers.Item(2))
-                lv.SubItems.Add(drOthers.Item(3))
-            ElseIf drOthers.Item(1) = "34" Then
-                Dim lv As ListViewItem = lv34.Items.Add(drOthers.Item(0))
-                lv.SubItems.Add(drOthers.Item(2))
-                lv.SubItems.Add(drOthers.Item(3))
-            ElseIf drOthers.Item(1) = "35" Then
-                Dim lv As ListViewItem = lv35.Items.Add(drOthers.Item(0))
-                lv.SubItems.Add(drOthers.Item(2))
-                lv.SubItems.Add(drOthers.Item(3))
+        Do Until i = OtherInfo.Rows.Count
+            If OtherInfo.Rows(i).Item(1) = "33" Then
+                Dim lv As ListViewItem = lv33.Items.Add(OtherInfo.Rows(i).Item(0))
+                lv.SubItems.Add(OtherInfo.Rows(i).Item(2))
+                lv.SubItems.Add(OtherInfo.Rows(i).Item(3))
+            ElseIf OtherInfo.Rows(i).Item(1) = "34" Then
+                Dim lv As ListViewItem = lv34.Items.Add(OtherInfo.Rows(i).Item(0))
+                lv.SubItems.Add(OtherInfo.Rows(i).Item(2))
+                lv.SubItems.Add(OtherInfo.Rows(i).Item(3))
+            ElseIf OtherInfo.Rows(i).Item(1) = "35" Then
+                Dim lv As ListViewItem = lv35.Items.Add(OtherInfo.Rows(i).Item(0))
+                lv.SubItems.Add(OtherInfo.Rows(i).Item(2))
+                lv.SubItems.Add(OtherInfo.Rows(i).Item(3))
             End If
+            i += 1
         Loop
-        drOthers.Close()
-        cmdOthers.Dispose()
-        'CONNECTION.Close()
-
     End Sub
+    Public Function dtQuestions() As DataTable
+        Dim dt As New DataTable
+        Using cn As New MySql.Data.MySqlClient.MySqlConnection With
+            {
+                .ConnectionString = Builder.ConnectionString
+            }
+            Using cmd As New MySql.Data.MySqlClient.MySqlCommand With
+                {
+                    .Connection = cn,
+                    .CommandText = "SELECT * from tbl_question where empno = '" & txtEmpNo.Text & "'"
+                }
+                cn.Open()
+                dt.Load(cmd.ExecuteReader)
+            End Using
+        End Using
+        Return dt
+    End Function
+
     Private Sub callQuestion()
         On Error Resume Next
-        Dim i As Integer
-        strSQLQuestion = "SELECT * from tbl_question where empno = '" & txtEmpNo.Text & "'"
-        'CONNECTION.Open()
-        Dim da As New MySqlDataAdapter(strSQLQuestion, CONNECTION)
-        ' cmdQuestion = New MySqlCommand(strSQLQuestion, CONNECTION)
-        'drQuestion = cmdQuestion.ExecuteReader()
-        da.Fill(dsQuestion, "Question")
-        If dsQuestion.Tables("Question").Rows.Count <> 0 Then
-            With dsQuestion.Tables("Question").Rows(0)
+         Dim i As Integer
+
+        If dtQuestions.Rows.Count <> 0 Then
+            With dtQuestions.Rows(0)
                 If .Item(1) = "Yes" Then
                     Me.optYes34A.Select()
                 ElseIf .Item(1) = "No" Then
@@ -1024,26 +1181,35 @@ Public Class PersonalInfo
             optNo40B.Select()
             optNo40C.Select()
         End If
-        dsQuestion.Reset()
 
-        'CONNECTION.Close()
     End Sub
+
+    Public Function dtPositions() As DataTable
+        Dim dt As New DataTable
+        Using cn As New MySql.Data.MySqlClient.MySqlConnection With
+            {
+                .ConnectionString = Builder.ConnectionString
+            }
+            Using cmd As New MySql.Data.MySqlClient.MySqlCommand With
+                {
+                    .Connection = cn,
+                    .CommandText = "SELECT * from tbl_positioncode"
+                }
+                cn.Open()
+                dt.Load(cmd.ExecuteReader)
+            End Using
+        End Using
+        Return dt
+    End Function
+
     Private Sub callPosition()
         On Error Resume Next
         Dim i As Integer
-        strSQLPos = "SELECT * from tbl_positioncode"
-        CONNECTION.Open()
-        cmdPos = New MySqlCommand(strSQLPos, CONNECTION)
-        drPos = cmdPos.ExecuteReader()
         cbDesignation.Items.Clear()
-        '.Items.Clear()
-        Do While drPos.Read()
-            cbDesignation.Items.Add(drPos.Item(2))
+        Do Until i = dtPositions.Rows.Count
+            cbDesignation.Items.Add(dtPositions.Rows(i).Item(2))
+            i += 1
         Loop
-        'txtChildTotal.Text = lvChild.Items.Count
-        drPos.Close()
-        cmdPos.Dispose()
-        CONNECTION.Close()
     End Sub
 
     '-------------------------------------------------

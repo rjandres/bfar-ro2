@@ -24,6 +24,7 @@ Partial Class frmTravelOrder
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.txtNameS = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.dtDateReturn = New System.Windows.Forms.DateTimePicker()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -45,7 +46,6 @@ Partial Class frmTravelOrder
         Me.Button2 = New System.Windows.Forms.Button()
         Me.btnPrint = New System.Windows.Forms.Button()
         Me.cmdDelete = New System.Windows.Forms.Button()
-        Me.txtNameS = New System.Windows.Forms.TextBox()
         Me.GroupBox1.SuspendLayout()
         Me.ContextMenuStrip1.SuspendLayout()
         Me.SuspendLayout()
@@ -71,6 +71,14 @@ Partial Class frmTravelOrder
         Me.GroupBox1.TabIndex = 5
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Travel Order Information"
+        '
+        'txtNameS
+        '
+        Me.txtNameS.Location = New System.Drawing.Point(73, 32)
+        Me.txtNameS.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtNameS.Name = "txtNameS"
+        Me.txtNameS.Size = New System.Drawing.Size(260, 27)
+        Me.txtNameS.TabIndex = 9
         '
         'Label4
         '
@@ -168,6 +176,7 @@ Partial Class frmTravelOrder
         'cmdClose
         '
         Me.cmdClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.cmdClose.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmdClose.Location = New System.Drawing.Point(752, 438)
         Me.cmdClose.Margin = New System.Windows.Forms.Padding(4)
         Me.cmdClose.Name = "cmdClose"
@@ -179,6 +188,7 @@ Partial Class frmTravelOrder
         'cmdEdit
         '
         Me.cmdEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.cmdEdit.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmdEdit.Location = New System.Drawing.Point(251, 439)
         Me.cmdEdit.Margin = New System.Windows.Forms.Padding(4)
         Me.cmdEdit.Name = "cmdEdit"
@@ -190,6 +200,7 @@ Partial Class frmTravelOrder
         'cmdAdd
         '
         Me.cmdAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.cmdAdd.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmdAdd.Location = New System.Drawing.Point(153, 439)
         Me.cmdAdd.Margin = New System.Windows.Forms.Padding(4)
         Me.cmdAdd.Name = "cmdAdd"
@@ -237,6 +248,7 @@ Partial Class frmTravelOrder
         'cmdCopy
         '
         Me.cmdCopy.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.cmdCopy.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmdCopy.Location = New System.Drawing.Point(447, 439)
         Me.cmdCopy.Margin = New System.Windows.Forms.Padding(4)
         Me.cmdCopy.Name = "cmdCopy"
@@ -248,6 +260,7 @@ Partial Class frmTravelOrder
         'Button2
         '
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button2.Location = New System.Drawing.Point(545, 439)
         Me.Button2.Margin = New System.Windows.Forms.Padding(4)
         Me.Button2.Name = "Button2"
@@ -259,6 +272,7 @@ Partial Class frmTravelOrder
         'btnPrint
         '
         Me.btnPrint.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnPrint.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnPrint.Location = New System.Drawing.Point(655, 439)
         Me.btnPrint.Margin = New System.Windows.Forms.Padding(4)
         Me.btnPrint.Name = "btnPrint"
@@ -270,6 +284,7 @@ Partial Class frmTravelOrder
         'cmdDelete
         '
         Me.cmdDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.cmdDelete.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmdDelete.Location = New System.Drawing.Point(348, 439)
         Me.cmdDelete.Margin = New System.Windows.Forms.Padding(4)
         Me.cmdDelete.Name = "cmdDelete"
@@ -278,19 +293,11 @@ Partial Class frmTravelOrder
         Me.cmdDelete.Text = "DELETE"
         Me.cmdDelete.UseVisualStyleBackColor = True
         '
-        'txtNameS
-        '
-        Me.txtNameS.Location = New System.Drawing.Point(73, 32)
-        Me.txtNameS.Margin = New System.Windows.Forms.Padding(4)
-        Me.txtNameS.Name = "txtNameS"
-        Me.txtNameS.Size = New System.Drawing.Size(260, 27)
-        Me.txtNameS.TabIndex = 9
-        '
         'frmTravelOrder
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.BackColor = System.Drawing.Color.DimGray
         Me.ClientSize = New System.Drawing.Size(1095, 477)
         Me.ControlBox = False
         Me.Controls.Add(Me.cmdDelete)

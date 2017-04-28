@@ -466,7 +466,7 @@ Partial Class frmPayrollMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.Aqua
+        Me.BackColor = System.Drawing.Color.DimGray
         Me.ClientSize = New System.Drawing.Size(1240, 700)
         Me.Controls.Add(Me.cmdCompute)
         Me.Controls.Add(Me.txtYear)
@@ -480,6 +480,7 @@ Partial Class frmPayrollMain
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.grpEmp)
         Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
+        Me.ForeColor = System.Drawing.Color.White
         Me.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Name = "frmPayrollMain"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen

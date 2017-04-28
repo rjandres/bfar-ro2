@@ -319,7 +319,7 @@ Partial Class frmAEWorkExp
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(10.0!, 18.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.Blue
+        Me.BackColor = System.Drawing.Color.DimGray
         Me.ClientSize = New System.Drawing.Size(635, 357)
         Me.ControlBox = False
         Me.Controls.Add(Me.Button1)

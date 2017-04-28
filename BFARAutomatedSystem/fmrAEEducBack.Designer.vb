@@ -68,7 +68,7 @@ Partial Class fmrAEEducBack
         'txtSchool
         '
         Me.txtSchool.Location = New System.Drawing.Point(180, 57)
-        Me.txtSchool.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtSchool.Margin = New System.Windows.Forms.Padding(4)
         Me.txtSchool.Name = "txtSchool"
         Me.txtSchool.Size = New System.Drawing.Size(484, 24)
         Me.txtSchool.TabIndex = 1
@@ -86,7 +86,7 @@ Partial Class fmrAEEducBack
         'txtCourse
         '
         Me.txtCourse.Location = New System.Drawing.Point(180, 94)
-        Me.txtCourse.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtCourse.Margin = New System.Windows.Forms.Padding(4)
         Me.txtCourse.Name = "txtCourse"
         Me.txtCourse.Size = New System.Drawing.Size(484, 24)
         Me.txtCourse.TabIndex = 2
@@ -104,7 +104,7 @@ Partial Class fmrAEEducBack
         'txtUnitEarned
         '
         Me.txtUnitEarned.Location = New System.Drawing.Point(573, 130)
-        Me.txtUnitEarned.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtUnitEarned.Margin = New System.Windows.Forms.Padding(4)
         Me.txtUnitEarned.Name = "txtUnitEarned"
         Me.txtUnitEarned.Size = New System.Drawing.Size(91, 24)
         Me.txtUnitEarned.TabIndex = 4
@@ -132,7 +132,7 @@ Partial Class fmrAEEducBack
         'txtFrom
         '
         Me.txtFrom.Location = New System.Drawing.Point(239, 177)
-        Me.txtFrom.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtFrom.Margin = New System.Windows.Forms.Padding(4)
         Me.txtFrom.Name = "txtFrom"
         Me.txtFrom.Size = New System.Drawing.Size(148, 24)
         Me.txtFrom.TabIndex = 5
@@ -140,7 +140,7 @@ Partial Class fmrAEEducBack
         'txtTo
         '
         Me.txtTo.Location = New System.Drawing.Point(395, 177)
-        Me.txtTo.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtTo.Margin = New System.Windows.Forms.Padding(4)
         Me.txtTo.Name = "txtTo"
         Me.txtTo.Size = New System.Drawing.Size(161, 24)
         Me.txtTo.TabIndex = 6
@@ -158,7 +158,7 @@ Partial Class fmrAEEducBack
         'txtHonor
         '
         Me.txtHonor.Location = New System.Drawing.Point(180, 209)
-        Me.txtHonor.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtHonor.Margin = New System.Windows.Forms.Padding(4)
         Me.txtHonor.Name = "txtHonor"
         Me.txtHonor.Size = New System.Drawing.Size(484, 24)
         Me.txtHonor.TabIndex = 7
@@ -167,7 +167,7 @@ Partial Class fmrAEEducBack
         '
         Me.cmdSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.cmdSave.Location = New System.Drawing.Point(398, 245)
-        Me.cmdSave.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.cmdSave.Margin = New System.Windows.Forms.Padding(4)
         Me.cmdSave.Name = "cmdSave"
         Me.cmdSave.Size = New System.Drawing.Size(124, 32)
         Me.cmdSave.TabIndex = 8
@@ -176,9 +176,10 @@ Partial Class fmrAEEducBack
         '
         'cmdCancel
         '
+        Me.cmdCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel
         Me.cmdCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.cmdCancel.Location = New System.Drawing.Point(540, 245)
-        Me.cmdCancel.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.cmdCancel.Margin = New System.Windows.Forms.Padding(4)
         Me.cmdCancel.Name = "cmdCancel"
         Me.cmdCancel.Size = New System.Drawing.Size(124, 32)
         Me.cmdCancel.TabIndex = 9
@@ -188,7 +189,7 @@ Partial Class fmrAEEducBack
         'txtEmpNo
         '
         Me.txtEmpNo.Location = New System.Drawing.Point(11, 288)
-        Me.txtEmpNo.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtEmpNo.Margin = New System.Windows.Forms.Padding(4)
         Me.txtEmpNo.Name = "txtEmpNo"
         Me.txtEmpNo.Size = New System.Drawing.Size(164, 24)
         Me.txtEmpNo.TabIndex = 16
@@ -200,7 +201,7 @@ Partial Class fmrAEEducBack
         Me.cbLevel.FormattingEnabled = True
         Me.cbLevel.Items.AddRange(New Object() {"Elementary", "Secondary", "Vocational/Trade Course", "College", "Graduate Studies"})
         Me.cbLevel.Location = New System.Drawing.Point(180, 19)
-        Me.cbLevel.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.cbLevel.Margin = New System.Windows.Forms.Padding(4)
         Me.cbLevel.Name = "cbLevel"
         Me.cbLevel.Size = New System.Drawing.Size(317, 26)
         Me.cbLevel.TabIndex = 0
@@ -208,7 +209,7 @@ Partial Class fmrAEEducBack
         'txtYearGraduate
         '
         Me.txtYearGraduate.Location = New System.Drawing.Point(180, 130)
-        Me.txtYearGraduate.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtYearGraduate.Margin = New System.Windows.Forms.Padding(4)
         Me.txtYearGraduate.Name = "txtYearGraduate"
         Me.txtYearGraduate.Size = New System.Drawing.Size(154, 24)
         Me.txtYearGraduate.TabIndex = 3
@@ -226,7 +227,7 @@ Partial Class fmrAEEducBack
         'txtCTRL
         '
         Me.txtCTRL.Location = New System.Drawing.Point(200, 298)
-        Me.txtCTRL.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtCTRL.Margin = New System.Windows.Forms.Padding(4)
         Me.txtCTRL.Name = "txtCTRL"
         Me.txtCTRL.Size = New System.Drawing.Size(133, 24)
         Me.txtCTRL.TabIndex = 20
@@ -247,7 +248,7 @@ Partial Class fmrAEEducBack
         Me.AcceptButton = Me.cmdSave
         Me.AutoScaleDimensions = New System.Drawing.SizeF(10.0!, 18.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.Blue
+        Me.BackColor = System.Drawing.Color.DimGray
         Me.CancelButton = Me.cmdCancel
         Me.ClientSize = New System.Drawing.Size(678, 285)
         Me.ControlBox = False
@@ -274,7 +275,8 @@ Partial Class fmrAEEducBack
         Me.Controls.Add(Me.Label1)
         Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ForeColor = System.Drawing.Color.White
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "fmrAEEducBack"
         Me.ShowInTaskbar = False
         Me.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide

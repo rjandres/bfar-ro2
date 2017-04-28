@@ -192,7 +192,7 @@ Partial Class frmAEVoluntary
         Me.AcceptButton = Me.cmdSave
         Me.AutoScaleDimensions = New System.Drawing.SizeF(10.0!, 18.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.BackColor = System.Drawing.Color.DimGray
         Me.CancelButton = Me.cmdCancel
         Me.ClientSize = New System.Drawing.Size(601, 298)
         Me.ControlBox = False

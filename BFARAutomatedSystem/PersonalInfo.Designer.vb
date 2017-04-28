@@ -582,6 +582,7 @@ Partial Class PersonalInfo
         '
         'GroupBox1
         '
+        Me.GroupBox1.BackColor = System.Drawing.Color.DimGray
         Me.GroupBox1.Controls.Add(Me.Label68)
         Me.GroupBox1.Controls.Add(Me.txtAllowance)
         Me.GroupBox1.Controls.Add(Me.GroupBox9)
@@ -836,7 +837,7 @@ Partial Class PersonalInfo
         '
         'TabPage5
         '
-        Me.TabPage5.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.TabPage5.BackColor = System.Drawing.Color.DimGray
         Me.TabPage5.Controls.Add(Me.cmdOtherDelete)
         Me.TabPage5.Controls.Add(Me.cmdOtherUpdateCancel)
         Me.TabPage5.Controls.Add(Me.lv35)
@@ -861,6 +862,7 @@ Partial Class PersonalInfo
         'cmdOtherDelete
         '
         Me.cmdOtherDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.cmdOtherDelete.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmdOtherDelete.Location = New System.Drawing.Point(643, 539)
         Me.cmdOtherDelete.Margin = New System.Windows.Forms.Padding(4)
         Me.cmdOtherDelete.Name = "cmdOtherDelete"
@@ -872,6 +874,7 @@ Partial Class PersonalInfo
         'cmdOtherUpdateCancel
         '
         Me.cmdOtherUpdateCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.cmdOtherUpdateCancel.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmdOtherUpdateCancel.Location = New System.Drawing.Point(547, 539)
         Me.cmdOtherUpdateCancel.Margin = New System.Windows.Forms.Padding(4)
         Me.cmdOtherUpdateCancel.Name = "cmdOtherUpdateCancel"
@@ -943,6 +946,7 @@ Partial Class PersonalInfo
         'cmdVWDelete
         '
         Me.cmdVWDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.cmdVWDelete.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmdVWDelete.Location = New System.Drawing.Point(643, 272)
         Me.cmdVWDelete.Margin = New System.Windows.Forms.Padding(4)
         Me.cmdVWDelete.Name = "cmdVWDelete"
@@ -965,6 +969,7 @@ Partial Class PersonalInfo
         'cmdOtherAddSave
         '
         Me.cmdOtherAddSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.cmdOtherAddSave.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmdOtherAddSave.Location = New System.Drawing.Point(453, 539)
         Me.cmdOtherAddSave.Margin = New System.Windows.Forms.Padding(4)
         Me.cmdOtherAddSave.Name = "cmdOtherAddSave"
@@ -1006,6 +1011,7 @@ Partial Class PersonalInfo
         'cmdVolUpdateCancel
         '
         Me.cmdVolUpdateCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.cmdVolUpdateCancel.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmdVolUpdateCancel.Location = New System.Drawing.Point(547, 272)
         Me.cmdVolUpdateCancel.Margin = New System.Windows.Forms.Padding(4)
         Me.cmdVolUpdateCancel.Name = "cmdVolUpdateCancel"
@@ -1017,6 +1023,7 @@ Partial Class PersonalInfo
         'cmdVolAddSave
         '
         Me.cmdVolAddSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.cmdVolAddSave.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmdVolAddSave.Location = New System.Drawing.Point(453, 272)
         Me.cmdVolAddSave.Margin = New System.Windows.Forms.Padding(4)
         Me.cmdVolAddSave.Name = "cmdVolAddSave"
@@ -1102,7 +1109,7 @@ Partial Class PersonalInfo
         '
         'TabPage6
         '
-        Me.TabPage6.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.TabPage6.BackColor = System.Drawing.Color.DimGray
         Me.TabPage6.Controls.Add(Me.cmdTrainingDelete)
         Me.TabPage6.Controls.Add(Me.cmdTrainingUpdate)
         Me.TabPage6.Controls.Add(Me.cmdTrainingAdd)
@@ -1118,6 +1125,7 @@ Partial Class PersonalInfo
         'cmdTrainingDelete
         '
         Me.cmdTrainingDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.cmdTrainingDelete.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmdTrainingDelete.Location = New System.Drawing.Point(652, 533)
         Me.cmdTrainingDelete.Margin = New System.Windows.Forms.Padding(4)
         Me.cmdTrainingDelete.Name = "cmdTrainingDelete"
@@ -1129,6 +1137,7 @@ Partial Class PersonalInfo
         'cmdTrainingUpdate
         '
         Me.cmdTrainingUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.cmdTrainingUpdate.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmdTrainingUpdate.Location = New System.Drawing.Point(556, 533)
         Me.cmdTrainingUpdate.Margin = New System.Windows.Forms.Padding(4)
         Me.cmdTrainingUpdate.Name = "cmdTrainingUpdate"
@@ -1140,6 +1149,7 @@ Partial Class PersonalInfo
         'cmdTrainingAdd
         '
         Me.cmdTrainingAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.cmdTrainingAdd.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmdTrainingAdd.Location = New System.Drawing.Point(461, 533)
         Me.cmdTrainingAdd.Margin = New System.Windows.Forms.Padding(4)
         Me.cmdTrainingAdd.Name = "cmdTrainingAdd"
@@ -1210,7 +1220,7 @@ Partial Class PersonalInfo
         '
         'TabPage4
         '
-        Me.TabPage4.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.TabPage4.BackColor = System.Drawing.Color.DimGray
         Me.TabPage4.Controls.Add(Me.Button17)
         Me.TabPage4.Controls.Add(Me.Button16)
         Me.TabPage4.Controls.Add(Me.Label56)
@@ -1233,6 +1243,7 @@ Partial Class PersonalInfo
         'Button17
         '
         Me.Button17.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button17.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button17.Location = New System.Drawing.Point(644, 537)
         Me.Button17.Margin = New System.Windows.Forms.Padding(4)
         Me.Button17.Name = "Button17"
@@ -1244,6 +1255,7 @@ Partial Class PersonalInfo
         'Button16
         '
         Me.Button16.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button16.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button16.Location = New System.Drawing.Point(644, 265)
         Me.Button16.Margin = New System.Windows.Forms.Padding(4)
         Me.Button16.Name = "Button16"
@@ -1266,6 +1278,7 @@ Partial Class PersonalInfo
         'Button5
         '
         Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button5.Location = New System.Drawing.Point(550, 537)
         Me.Button5.Margin = New System.Windows.Forms.Padding(4)
         Me.Button5.Name = "Button5"
@@ -1277,6 +1290,7 @@ Partial Class PersonalInfo
         'Button6
         '
         Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button6.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button6.Location = New System.Drawing.Point(456, 537)
         Me.Button6.Margin = New System.Windows.Forms.Padding(4)
         Me.Button6.Name = "Button6"
@@ -1327,6 +1341,7 @@ Partial Class PersonalInfo
         'cmdWorkUpdateCancel
         '
         Me.cmdWorkUpdateCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.cmdWorkUpdateCancel.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmdWorkUpdateCancel.Location = New System.Drawing.Point(550, 265)
         Me.cmdWorkUpdateCancel.Margin = New System.Windows.Forms.Padding(4)
         Me.cmdWorkUpdateCancel.Name = "cmdWorkUpdateCancel"
@@ -1338,6 +1353,7 @@ Partial Class PersonalInfo
         'cmdWorkAddSave
         '
         Me.cmdWorkAddSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.cmdWorkAddSave.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmdWorkAddSave.Location = New System.Drawing.Point(456, 265)
         Me.cmdWorkAddSave.Margin = New System.Windows.Forms.Padding(4)
         Me.cmdWorkAddSave.Name = "cmdWorkAddSave"
@@ -1429,7 +1445,7 @@ Partial Class PersonalInfo
         '
         'TabPage3
         '
-        Me.TabPage3.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.TabPage3.BackColor = System.Drawing.Color.DimGray
         Me.TabPage3.Controls.Add(Me.Button19)
         Me.TabPage3.Controls.Add(Me.Button18)
         Me.TabPage3.Controls.Add(Me.Label55)
@@ -1452,6 +1468,7 @@ Partial Class PersonalInfo
         'Button19
         '
         Me.Button19.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button19.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button19.Location = New System.Drawing.Point(656, 524)
         Me.Button19.Margin = New System.Windows.Forms.Padding(4)
         Me.Button19.Name = "Button19"
@@ -1463,6 +1480,7 @@ Partial Class PersonalInfo
         'Button18
         '
         Me.Button18.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button18.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button18.Location = New System.Drawing.Point(644, 220)
         Me.Button18.Margin = New System.Windows.Forms.Padding(4)
         Me.Button18.Name = "Button18"
@@ -1485,6 +1503,7 @@ Partial Class PersonalInfo
         'cmdCivilUpdateCancel
         '
         Me.cmdCivilUpdateCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.cmdCivilUpdateCancel.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmdCivilUpdateCancel.Location = New System.Drawing.Point(561, 524)
         Me.cmdCivilUpdateCancel.Margin = New System.Windows.Forms.Padding(4)
         Me.cmdCivilUpdateCancel.Name = "cmdCivilUpdateCancel"
@@ -1496,6 +1515,7 @@ Partial Class PersonalInfo
         'cmdCivilAddSave
         '
         Me.cmdCivilAddSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.cmdCivilAddSave.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmdCivilAddSave.Location = New System.Drawing.Point(467, 524)
         Me.cmdCivilAddSave.Margin = New System.Windows.Forms.Padding(4)
         Me.cmdCivilAddSave.Name = "cmdCivilAddSave"
@@ -1565,6 +1585,7 @@ Partial Class PersonalInfo
         'cmdEducUpdateCancel
         '
         Me.cmdEducUpdateCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.cmdEducUpdateCancel.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmdEducUpdateCancel.Location = New System.Drawing.Point(550, 220)
         Me.cmdEducUpdateCancel.Margin = New System.Windows.Forms.Padding(4)
         Me.cmdEducUpdateCancel.Name = "cmdEducUpdateCancel"
@@ -1576,6 +1597,7 @@ Partial Class PersonalInfo
         'cmdEducAddSave
         '
         Me.cmdEducAddSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.cmdEducAddSave.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmdEducAddSave.Location = New System.Drawing.Point(456, 220)
         Me.cmdEducAddSave.Margin = New System.Windows.Forms.Padding(4)
         Me.cmdEducAddSave.Name = "cmdEducAddSave"
@@ -1675,7 +1697,7 @@ Partial Class PersonalInfo
         '
         'TabPage2
         '
-        Me.TabPage2.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.TabPage2.BackColor = System.Drawing.Color.DimGray
         Me.TabPage2.Controls.Add(Me.grpFBackground)
         Me.TabPage2.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.TabPage2.Location = New System.Drawing.Point(4, 44)
@@ -1688,6 +1710,7 @@ Partial Class PersonalInfo
         '
         'grpFBackground
         '
+        Me.grpFBackground.BackColor = System.Drawing.Color.DimGray
         Me.grpFBackground.Controls.Add(Me.txtChildTotal)
         Me.grpFBackground.Controls.Add(Me.cmdChildUpdateCancel)
         Me.grpFBackground.Controls.Add(Me.Button4)
@@ -1731,6 +1754,7 @@ Partial Class PersonalInfo
         Me.grpFBackground.Controls.Add(Me.Label24)
         Me.grpFBackground.Controls.Add(Me.Label23)
         Me.grpFBackground.Controls.Add(Me.ShapeContainer1)
+        Me.grpFBackground.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.grpFBackground.Location = New System.Drawing.Point(20, 6)
         Me.grpFBackground.Margin = New System.Windows.Forms.Padding(4)
         Me.grpFBackground.Name = "grpFBackground"
@@ -1840,7 +1864,7 @@ Partial Class PersonalInfo
         '
         'txtMMiddleName
         '
-        Me.txtMMiddleName.Location = New System.Drawing.Point(456, 265)
+        Me.txtMMiddleName.Location = New System.Drawing.Point(469, 265)
         Me.txtMMiddleName.Margin = New System.Windows.Forms.Padding(4)
         Me.txtMMiddleName.Name = "txtMMiddleName"
         Me.txtMMiddleName.Size = New System.Drawing.Size(197, 21)
@@ -1848,7 +1872,7 @@ Partial Class PersonalInfo
         '
         'txtMFirstName
         '
-        Me.txtMFirstName.Location = New System.Drawing.Point(456, 239)
+        Me.txtMFirstName.Location = New System.Drawing.Point(469, 239)
         Me.txtMFirstName.Margin = New System.Windows.Forms.Padding(4)
         Me.txtMFirstName.Name = "txtMFirstName"
         Me.txtMFirstName.Size = New System.Drawing.Size(197, 21)
@@ -1856,7 +1880,7 @@ Partial Class PersonalInfo
         '
         'txtMMaiden
         '
-        Me.txtMMaiden.Location = New System.Drawing.Point(456, 187)
+        Me.txtMMaiden.Location = New System.Drawing.Point(469, 187)
         Me.txtMMaiden.Margin = New System.Windows.Forms.Padding(4)
         Me.txtMMaiden.Name = "txtMMaiden"
         Me.txtMMaiden.Size = New System.Drawing.Size(197, 21)
@@ -1864,7 +1888,7 @@ Partial Class PersonalInfo
         '
         'txtMSurname
         '
-        Me.txtMSurname.Location = New System.Drawing.Point(456, 213)
+        Me.txtMSurname.Location = New System.Drawing.Point(469, 213)
         Me.txtMSurname.Margin = New System.Windows.Forms.Padding(4)
         Me.txtMSurname.Name = "txtMSurname"
         Me.txtMSurname.Size = New System.Drawing.Size(197, 21)
@@ -1876,7 +1900,7 @@ Partial Class PersonalInfo
         Me.Label35.Location = New System.Drawing.Point(363, 267)
         Me.Label35.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label35.Name = "Label35"
-        Me.Label35.Size = New System.Drawing.Size(88, 15)
+        Me.Label35.Size = New System.Drawing.Size(101, 15)
         Me.Label35.TabIndex = 26
         Me.Label35.Text = "Middle Name :"
         '
@@ -1886,7 +1910,7 @@ Partial Class PersonalInfo
         Me.Label87.Location = New System.Drawing.Point(363, 187)
         Me.Label87.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label87.Name = "Label87"
-        Me.Label87.Size = New System.Drawing.Size(92, 15)
+        Me.Label87.Size = New System.Drawing.Size(105, 15)
         Me.Label87.TabIndex = 24
         Me.Label87.Text = "Maiden Name :"
         '
@@ -1896,7 +1920,7 @@ Partial Class PersonalInfo
         Me.Label36.Location = New System.Drawing.Point(363, 240)
         Me.Label36.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label36.Name = "Label36"
-        Me.Label36.Size = New System.Drawing.Size(73, 15)
+        Me.Label36.Size = New System.Drawing.Size(85, 15)
         Me.Label36.TabIndex = 25
         Me.Label36.Text = "First Name :"
         '
@@ -1906,7 +1930,7 @@ Partial Class PersonalInfo
         Me.Label37.Location = New System.Drawing.Point(363, 214)
         Me.Label37.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label37.Name = "Label37"
-        Me.Label37.Size = New System.Drawing.Size(64, 15)
+        Me.Label37.Size = New System.Drawing.Size(73, 15)
         Me.Label37.TabIndex = 24
         Me.Label37.Text = "Surname :"
         '
@@ -1916,13 +1940,13 @@ Partial Class PersonalInfo
         Me.Label38.Location = New System.Drawing.Point(344, 167)
         Me.Label38.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label38.Name = "Label38"
-        Me.Label38.Size = New System.Drawing.Size(120, 15)
+        Me.Label38.Size = New System.Drawing.Size(140, 15)
         Me.Label38.TabIndex = 23
         Me.Label38.Text = "Mother's Information"
         '
         'txtSExtension
         '
-        Me.txtSExtension.Location = New System.Drawing.Point(132, 124)
+        Me.txtSExtension.Location = New System.Drawing.Point(145, 124)
         Me.txtSExtension.Margin = New System.Windows.Forms.Padding(4)
         Me.txtSExtension.Name = "txtSExtension"
         Me.txtSExtension.Size = New System.Drawing.Size(197, 21)
@@ -1931,7 +1955,7 @@ Partial Class PersonalInfo
         '
         'txtFExtension
         '
-        Me.txtFExtension.Location = New System.Drawing.Point(132, 265)
+        Me.txtFExtension.Location = New System.Drawing.Point(145, 265)
         Me.txtFExtension.Margin = New System.Windows.Forms.Padding(4)
         Me.txtFExtension.Name = "txtFExtension"
         Me.txtFExtension.Size = New System.Drawing.Size(197, 21)
@@ -1939,7 +1963,7 @@ Partial Class PersonalInfo
         '
         'txtFMiddleName
         '
-        Me.txtFMiddleName.Location = New System.Drawing.Point(132, 239)
+        Me.txtFMiddleName.Location = New System.Drawing.Point(145, 239)
         Me.txtFMiddleName.Margin = New System.Windows.Forms.Padding(4)
         Me.txtFMiddleName.Name = "txtFMiddleName"
         Me.txtFMiddleName.Size = New System.Drawing.Size(197, 21)
@@ -1951,13 +1975,13 @@ Partial Class PersonalInfo
         Me.Label89.Location = New System.Drawing.Point(29, 125)
         Me.Label89.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label89.Name = "Label89"
-        Me.Label89.Size = New System.Drawing.Size(104, 15)
+        Me.Label89.Size = New System.Drawing.Size(120, 15)
         Me.Label89.TabIndex = 19
         Me.Label89.Text = "Name Extension :"
         '
         'txtFFirstName
         '
-        Me.txtFFirstName.Location = New System.Drawing.Point(132, 213)
+        Me.txtFFirstName.Location = New System.Drawing.Point(145, 213)
         Me.txtFFirstName.Margin = New System.Windows.Forms.Padding(4)
         Me.txtFFirstName.Name = "txtFFirstName"
         Me.txtFFirstName.Size = New System.Drawing.Size(197, 21)
@@ -1969,13 +1993,13 @@ Partial Class PersonalInfo
         Me.Label88.Location = New System.Drawing.Point(29, 267)
         Me.Label88.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label88.Name = "Label88"
-        Me.Label88.Size = New System.Drawing.Size(104, 15)
+        Me.Label88.Size = New System.Drawing.Size(120, 15)
         Me.Label88.TabIndex = 19
         Me.Label88.Text = "Name Extension :"
         '
         'txtFSurname
         '
-        Me.txtFSurname.Location = New System.Drawing.Point(132, 187)
+        Me.txtFSurname.Location = New System.Drawing.Point(145, 187)
         Me.txtFSurname.Margin = New System.Windows.Forms.Padding(4)
         Me.txtFSurname.Name = "txtFSurname"
         Me.txtFSurname.Size = New System.Drawing.Size(197, 21)
@@ -1987,7 +2011,7 @@ Partial Class PersonalInfo
         Me.Label32.Location = New System.Drawing.Point(29, 242)
         Me.Label32.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label32.Name = "Label32"
-        Me.Label32.Size = New System.Drawing.Size(88, 15)
+        Me.Label32.Size = New System.Drawing.Size(101, 15)
         Me.Label32.TabIndex = 19
         Me.Label32.Text = "Middle Name :"
         '
@@ -1997,7 +2021,7 @@ Partial Class PersonalInfo
         Me.Label33.Location = New System.Drawing.Point(29, 217)
         Me.Label33.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label33.Name = "Label33"
-        Me.Label33.Size = New System.Drawing.Size(73, 15)
+        Me.Label33.Size = New System.Drawing.Size(85, 15)
         Me.Label33.TabIndex = 18
         Me.Label33.Text = "First Name :"
         '
@@ -2007,7 +2031,7 @@ Partial Class PersonalInfo
         Me.Label34.Location = New System.Drawing.Point(29, 188)
         Me.Label34.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label34.Name = "Label34"
-        Me.Label34.Size = New System.Drawing.Size(64, 15)
+        Me.Label34.Size = New System.Drawing.Size(73, 15)
         Me.Label34.TabIndex = 17
         Me.Label34.Text = "Surname :"
         '
@@ -2017,7 +2041,7 @@ Partial Class PersonalInfo
         Me.Label31.Location = New System.Drawing.Point(20, 167)
         Me.Label31.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label31.Name = "Label31"
-        Me.Label31.Size = New System.Drawing.Size(116, 15)
+        Me.Label31.Size = New System.Drawing.Size(136, 15)
         Me.Label31.TabIndex = 16
         Me.Label31.Text = "Father's Information"
         '
@@ -2032,19 +2056,19 @@ Partial Class PersonalInfo
         '
         'txtSEmpAddress
         '
-        Me.txtSEmpAddress.Location = New System.Drawing.Point(465, 95)
+        Me.txtSEmpAddress.Location = New System.Drawing.Point(471, 95)
         Me.txtSEmpAddress.Margin = New System.Windows.Forms.Padding(4)
         Me.txtSEmpAddress.Name = "txtSEmpAddress"
-        Me.txtSEmpAddress.Size = New System.Drawing.Size(241, 21)
+        Me.txtSEmpAddress.Size = New System.Drawing.Size(231, 21)
         Me.txtSEmpAddress.TabIndex = 5
         Me.txtSEmpAddress.Text = "N/A"
         '
         'txtSEmployer
         '
-        Me.txtSEmployer.Location = New System.Drawing.Point(484, 68)
+        Me.txtSEmployer.Location = New System.Drawing.Point(490, 68)
         Me.txtSEmployer.Margin = New System.Windows.Forms.Padding(4)
         Me.txtSEmployer.Name = "txtSEmployer"
-        Me.txtSEmployer.Size = New System.Drawing.Size(221, 21)
+        Me.txtSEmployer.Size = New System.Drawing.Size(211, 21)
         Me.txtSEmployer.TabIndex = 4
         Me.txtSEmployer.Text = "N/A"
         '
@@ -2063,7 +2087,7 @@ Partial Class PersonalInfo
         Me.Label30.Location = New System.Drawing.Point(344, 125)
         Me.Label30.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label30.Name = "Label30"
-        Me.Label30.Size = New System.Drawing.Size(94, 15)
+        Me.Label30.Size = New System.Drawing.Size(109, 15)
         Me.Label30.TabIndex = 10
         Me.Label30.Text = "Telephone No. :"
         '
@@ -2073,7 +2097,7 @@ Partial Class PersonalInfo
         Me.Label29.Location = New System.Drawing.Point(344, 96)
         Me.Label29.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label29.Name = "Label29"
-        Me.Label29.Size = New System.Drawing.Size(110, 15)
+        Me.Label29.Size = New System.Drawing.Size(128, 15)
         Me.Label29.TabIndex = 9
         Me.Label29.Text = "Business Address :"
         '
@@ -2083,7 +2107,7 @@ Partial Class PersonalInfo
         Me.Label28.Location = New System.Drawing.Point(345, 71)
         Me.Label28.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label28.Name = "Label28"
-        Me.Label28.Size = New System.Drawing.Size(129, 15)
+        Me.Label28.Size = New System.Drawing.Size(149, 15)
         Me.Label28.TabIndex = 8
         Me.Label28.Text = "Employer/Bus. Name :"
         '
@@ -2093,13 +2117,13 @@ Partial Class PersonalInfo
         Me.Label27.Location = New System.Drawing.Point(340, 41)
         Me.Label27.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label27.Name = "Label27"
-        Me.Label27.Size = New System.Drawing.Size(75, 15)
+        Me.Label27.Size = New System.Drawing.Size(87, 15)
         Me.Label27.TabIndex = 7
         Me.Label27.Text = "Occupation :"
         '
         'txtSMiddleName
         '
-        Me.txtSMiddleName.Location = New System.Drawing.Point(132, 95)
+        Me.txtSMiddleName.Location = New System.Drawing.Point(145, 95)
         Me.txtSMiddleName.Margin = New System.Windows.Forms.Padding(4)
         Me.txtSMiddleName.Name = "txtSMiddleName"
         Me.txtSMiddleName.Size = New System.Drawing.Size(197, 21)
@@ -2108,7 +2132,7 @@ Partial Class PersonalInfo
         '
         'txtSFirstName
         '
-        Me.txtSFirstName.Location = New System.Drawing.Point(132, 68)
+        Me.txtSFirstName.Location = New System.Drawing.Point(145, 68)
         Me.txtSFirstName.Margin = New System.Windows.Forms.Padding(4)
         Me.txtSFirstName.Name = "txtSFirstName"
         Me.txtSFirstName.Size = New System.Drawing.Size(197, 21)
@@ -2117,7 +2141,7 @@ Partial Class PersonalInfo
         '
         'txtSSurname
         '
-        Me.txtSSurname.Location = New System.Drawing.Point(132, 38)
+        Me.txtSSurname.Location = New System.Drawing.Point(145, 38)
         Me.txtSSurname.Margin = New System.Windows.Forms.Padding(4)
         Me.txtSSurname.Name = "txtSSurname"
         Me.txtSSurname.Size = New System.Drawing.Size(197, 21)
@@ -2130,7 +2154,7 @@ Partial Class PersonalInfo
         Me.Label26.Location = New System.Drawing.Point(29, 96)
         Me.Label26.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label26.Name = "Label26"
-        Me.Label26.Size = New System.Drawing.Size(88, 15)
+        Me.Label26.Size = New System.Drawing.Size(101, 15)
         Me.Label26.TabIndex = 3
         Me.Label26.Text = "Middle Name :"
         '
@@ -2140,7 +2164,7 @@ Partial Class PersonalInfo
         Me.Label25.Location = New System.Drawing.Point(29, 71)
         Me.Label25.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label25.Name = "Label25"
-        Me.Label25.Size = New System.Drawing.Size(73, 15)
+        Me.Label25.Size = New System.Drawing.Size(85, 15)
         Me.Label25.TabIndex = 2
         Me.Label25.Text = "First Name :"
         '
@@ -2150,7 +2174,7 @@ Partial Class PersonalInfo
         Me.Label24.Location = New System.Drawing.Point(29, 41)
         Me.Label24.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label24.Name = "Label24"
-        Me.Label24.Size = New System.Drawing.Size(64, 15)
+        Me.Label24.Size = New System.Drawing.Size(73, 15)
         Me.Label24.TabIndex = 1
         Me.Label24.Text = "Surname :"
         '
@@ -2160,7 +2184,7 @@ Partial Class PersonalInfo
         Me.Label23.Location = New System.Drawing.Point(20, 19)
         Me.Label23.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label23.Name = "Label23"
-        Me.Label23.Size = New System.Drawing.Size(123, 15)
+        Me.Label23.Size = New System.Drawing.Size(143, 15)
         Me.Label23.TabIndex = 0
         Me.Label23.Text = "Spouse's Information"
         '
@@ -2196,7 +2220,7 @@ Partial Class PersonalInfo
         '
         'TabPage1
         '
-        Me.TabPage1.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.TabPage1.BackColor = System.Drawing.Color.DimGray
         Me.TabPage1.Controls.Add(Me.grTop)
         Me.TabPage1.Controls.Add(Me.grpPersonal2)
         Me.TabPage1.Controls.Add(Me.grpPersonal)
@@ -2215,6 +2239,7 @@ Partial Class PersonalInfo
         '
         'grTop
         '
+        Me.grTop.BackColor = System.Drawing.Color.DimGray
         Me.grTop.Controls.Add(Me.cbRetired)
         Me.grTop.Controls.Add(Me.dtpRetired)
         Me.grTop.Controls.Add(Me.Label73)
@@ -2351,6 +2376,7 @@ Partial Class PersonalInfo
         '
         'grpPersonal2
         '
+        Me.grpPersonal2.BackColor = System.Drawing.Color.DimGray
         Me.grpPersonal2.Controls.Add(Me.Button12)
         Me.grpPersonal2.Controls.Add(Me.txtCP)
         Me.grpPersonal2.Controls.Add(Me.Label21)
@@ -2765,6 +2791,7 @@ Partial Class PersonalInfo
         '
         'grpPersonal
         '
+        Me.grpPersonal.BackColor = System.Drawing.Color.DimGray
         Me.grpPersonal.Controls.Add(Me.txtTINNo)
         Me.grpPersonal.Controls.Add(Me.Label22)
         Me.grpPersonal.Controls.Add(Me.Panel2)
@@ -3300,7 +3327,7 @@ Partial Class PersonalInfo
         '
         'TabPage7
         '
-        Me.TabPage7.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.TabPage7.BackColor = System.Drawing.Color.DimGray
         Me.TabPage7.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.TabPage7.Controls.Add(Me.Button9)
         Me.TabPage7.Controls.Add(Me.Button8)
@@ -4419,7 +4446,7 @@ Partial Class PersonalInfo
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.BackColor = System.Drawing.Color.Silver
         Me.ClientSize = New System.Drawing.Size(952, 651)
         Me.ControlBox = False
         Me.Controls.Add(Me.txtHEmpNo)
