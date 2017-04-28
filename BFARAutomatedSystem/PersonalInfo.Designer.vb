@@ -314,44 +314,6 @@ Partial Class PersonalInfo
         Me.Button9 = New System.Windows.Forms.Button()
         Me.Button8 = New System.Windows.Forms.Button()
         Me.Button7 = New System.Windows.Forms.Button()
-        Me.fra1to6 = New System.Windows.Forms.GroupBox()
-        Me.Label49 = New System.Windows.Forms.Label()
-        Me.Label45 = New System.Windows.Forms.Label()
-        Me.GroupBox8 = New System.Windows.Forms.GroupBox()
-        Me.txt37 = New System.Windows.Forms.TextBox()
-        Me.optNo37 = New System.Windows.Forms.RadioButton()
-        Me.optYes37 = New System.Windows.Forms.RadioButton()
-        Me.Label52 = New System.Windows.Forms.Label()
-        Me.Label54 = New System.Windows.Forms.Label()
-        Me.GroupBox7 = New System.Windows.Forms.GroupBox()
-        Me.txt36 = New System.Windows.Forms.TextBox()
-        Me.optNo36 = New System.Windows.Forms.RadioButton()
-        Me.optYes36 = New System.Windows.Forms.RadioButton()
-        Me.Label53 = New System.Windows.Forms.Label()
-        Me.GroupBox6 = New System.Windows.Forms.GroupBox()
-        Me.txt35B = New System.Windows.Forms.TextBox()
-        Me.optNo35B = New System.Windows.Forms.RadioButton()
-        Me.optYes35B = New System.Windows.Forms.RadioButton()
-        Me.Label51 = New System.Windows.Forms.Label()
-        Me.GroupBox5 = New System.Windows.Forms.GroupBox()
-        Me.txt35A = New System.Windows.Forms.TextBox()
-        Me.optNo35A = New System.Windows.Forms.RadioButton()
-        Me.optYes35A = New System.Windows.Forms.RadioButton()
-        Me.Label50 = New System.Windows.Forms.Label()
-        Me.GroupBox4 = New System.Windows.Forms.GroupBox()
-        Me.txt34B = New System.Windows.Forms.TextBox()
-        Me.optNo34B = New System.Windows.Forms.RadioButton()
-        Me.optYes34B = New System.Windows.Forms.RadioButton()
-        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
-        Me.txt34A = New System.Windows.Forms.TextBox()
-        Me.optNo34A = New System.Windows.Forms.RadioButton()
-        Me.optYes34A = New System.Windows.Forms.RadioButton()
-        Me.Label46 = New System.Windows.Forms.Label()
-        Me.Label44 = New System.Windows.Forms.Label()
-        Me.ShapeContainer2 = New Microsoft.VisualBasic.PowerPacks.ShapeContainer()
-        Me.LineShape5 = New Microsoft.VisualBasic.PowerPacks.LineShape()
-        Me.LineShape4 = New Microsoft.VisualBasic.PowerPacks.LineShape()
-        Me.LineShape3 = New Microsoft.VisualBasic.PowerPacks.LineShape()
         Me.fra7to10 = New System.Windows.Forms.GroupBox()
         Me.txtYesNo40C = New System.Windows.Forms.TextBox()
         Me.txtYesNo40B = New System.Windows.Forms.TextBox()
@@ -401,6 +363,44 @@ Partial Class PersonalInfo
         Me.ShapeContainer3 = New Microsoft.VisualBasic.PowerPacks.ShapeContainer()
         Me.LineShape7 = New Microsoft.VisualBasic.PowerPacks.LineShape()
         Me.LineShape8 = New Microsoft.VisualBasic.PowerPacks.LineShape()
+        Me.fra1to6 = New System.Windows.Forms.GroupBox()
+        Me.Label49 = New System.Windows.Forms.Label()
+        Me.Label45 = New System.Windows.Forms.Label()
+        Me.GroupBox8 = New System.Windows.Forms.GroupBox()
+        Me.txt37 = New System.Windows.Forms.TextBox()
+        Me.optNo37 = New System.Windows.Forms.RadioButton()
+        Me.optYes37 = New System.Windows.Forms.RadioButton()
+        Me.Label52 = New System.Windows.Forms.Label()
+        Me.Label54 = New System.Windows.Forms.Label()
+        Me.GroupBox7 = New System.Windows.Forms.GroupBox()
+        Me.txt36 = New System.Windows.Forms.TextBox()
+        Me.optNo36 = New System.Windows.Forms.RadioButton()
+        Me.optYes36 = New System.Windows.Forms.RadioButton()
+        Me.Label53 = New System.Windows.Forms.Label()
+        Me.GroupBox6 = New System.Windows.Forms.GroupBox()
+        Me.txt35B = New System.Windows.Forms.TextBox()
+        Me.optNo35B = New System.Windows.Forms.RadioButton()
+        Me.optYes35B = New System.Windows.Forms.RadioButton()
+        Me.Label51 = New System.Windows.Forms.Label()
+        Me.GroupBox5 = New System.Windows.Forms.GroupBox()
+        Me.txt35A = New System.Windows.Forms.TextBox()
+        Me.optNo35A = New System.Windows.Forms.RadioButton()
+        Me.optYes35A = New System.Windows.Forms.RadioButton()
+        Me.Label50 = New System.Windows.Forms.Label()
+        Me.GroupBox4 = New System.Windows.Forms.GroupBox()
+        Me.txt34B = New System.Windows.Forms.TextBox()
+        Me.optNo34B = New System.Windows.Forms.RadioButton()
+        Me.optYes34B = New System.Windows.Forms.RadioButton()
+        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
+        Me.txt34A = New System.Windows.Forms.TextBox()
+        Me.optNo34A = New System.Windows.Forms.RadioButton()
+        Me.optYes34A = New System.Windows.Forms.RadioButton()
+        Me.Label46 = New System.Windows.Forms.Label()
+        Me.Label44 = New System.Windows.Forms.Label()
+        Me.ShapeContainer2 = New Microsoft.VisualBasic.PowerPacks.ShapeContainer()
+        Me.LineShape5 = New Microsoft.VisualBasic.PowerPacks.LineShape()
+        Me.LineShape4 = New Microsoft.VisualBasic.PowerPacks.LineShape()
+        Me.LineShape3 = New Microsoft.VisualBasic.PowerPacks.LineShape()
         Me.ContextMenu1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.tsmLV33Edit = New System.Windows.Forms.ToolStripMenuItem()
         Me.tsmLV33Delete = New System.Windows.Forms.ToolStripMenuItem()
@@ -430,13 +430,6 @@ Partial Class PersonalInfo
         Me.Panel1.SuspendLayout()
         Me.TabControl1.SuspendLayout()
         Me.TabPage7.SuspendLayout()
-        Me.fra1to6.SuspendLayout()
-        Me.GroupBox8.SuspendLayout()
-        Me.GroupBox7.SuspendLayout()
-        Me.GroupBox6.SuspendLayout()
-        Me.GroupBox5.SuspendLayout()
-        Me.GroupBox4.SuspendLayout()
-        Me.GroupBox3.SuspendLayout()
         Me.fra7to10.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox12.SuspendLayout()
@@ -444,6 +437,13 @@ Partial Class PersonalInfo
         Me.GroupBox14.SuspendLayout()
         Me.GroupBox10.SuspendLayout()
         Me.GroupBox15.SuspendLayout()
+        Me.fra1to6.SuspendLayout()
+        Me.GroupBox8.SuspendLayout()
+        Me.GroupBox7.SuspendLayout()
+        Me.GroupBox6.SuspendLayout()
+        Me.GroupBox5.SuspendLayout()
+        Me.GroupBox4.SuspendLayout()
+        Me.GroupBox3.SuspendLayout()
         Me.ContextMenu1.SuspendLayout()
         Me.ContextMenu2.SuspendLayout()
         Me.ContextMenu3.SuspendLayout()
@@ -590,8 +590,6 @@ Partial Class PersonalInfo
         Me.GroupBox1.Controls.Add(Me.empPic)
         Me.GroupBox1.Controls.Add(Me.cmdClose)
         Me.GroupBox1.Controls.Add(Me.Button20)
-        Me.GroupBox1.Controls.Add(Me.txtRTel)
-        Me.GroupBox1.Controls.Add(Me.Label15)
         Me.GroupBox1.Location = New System.Drawing.Point(766, 56)
         Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.GroupBox1.Name = "GroupBox1"
@@ -763,21 +761,23 @@ Partial Class PersonalInfo
         '
         'txtRTel
         '
-        Me.txtRTel.Location = New System.Drawing.Point(51, 492)
+        Me.txtRTel.Location = New System.Drawing.Point(467, 626)
         Me.txtRTel.Margin = New System.Windows.Forms.Padding(4)
         Me.txtRTel.Name = "txtRTel"
         Me.txtRTel.Size = New System.Drawing.Size(169, 21)
         Me.txtRTel.TabIndex = 23
+        Me.txtRTel.Visible = False
         '
         'Label15
         '
         Me.Label15.AutoSize = True
-        Me.Label15.Location = New System.Drawing.Point(-93, 492)
+        Me.Label15.Location = New System.Drawing.Point(468, 629)
         Me.Label15.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label15.Name = "Label15"
         Me.Label15.Size = New System.Drawing.Size(120, 15)
         Me.Label15.TabIndex = 1
         Me.Label15.Text = "Telephone Number :"
+        Me.Label15.Visible = False
         '
         'Button14
         '
@@ -1348,6 +1348,7 @@ Partial Class PersonalInfo
         '
         'lvWorkExp
         '
+        Me.lvWorkExp.AutoArrange = False
         Me.lvWorkExp.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.lvWorkExp.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader30, Me.ColumnHeader15, Me.ColumnHeader16, Me.ColumnHeader17, Me.ColumnHeader18, Me.ColumnHeader19, Me.ColumnHeader20, Me.ColumnHeader21, Me.ColumnHeader22, Me.ColumnHeader51})
         Me.lvWorkExp.Dock = System.Windows.Forms.DockStyle.Top
@@ -1357,6 +1358,7 @@ Partial Class PersonalInfo
         Me.lvWorkExp.Margin = New System.Windows.Forms.Padding(4)
         Me.lvWorkExp.Name = "lvWorkExp"
         Me.lvWorkExp.Size = New System.Drawing.Size(746, 254)
+        Me.lvWorkExp.Sorting = System.Windows.Forms.SortOrder.Ascending
         Me.lvWorkExp.TabIndex = 0
         Me.lvWorkExp.UseCompatibleStateImageBehavior = False
         Me.lvWorkExp.View = System.Windows.Forms.View.Details
@@ -2209,7 +2211,7 @@ Partial Class PersonalInfo
         Me.TabPage1.Size = New System.Drawing.Size(754, 573)
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "Personal Information"
-        Me.TabPage1.ToolTipText = "ssssssssssssssss"
+        Me.TabPage1.ToolTipText = "Personal Information"
         '
         'grTop
         '
@@ -3348,444 +3350,6 @@ Partial Class PersonalInfo
         Me.Button7.Text = "BACK"
         Me.Button7.UseVisualStyleBackColor = True
         '
-        'fra1to6
-        '
-        Me.fra1to6.Controls.Add(Me.Label49)
-        Me.fra1to6.Controls.Add(Me.Label45)
-        Me.fra1to6.Controls.Add(Me.GroupBox8)
-        Me.fra1to6.Controls.Add(Me.Label52)
-        Me.fra1to6.Controls.Add(Me.Label54)
-        Me.fra1to6.Controls.Add(Me.GroupBox7)
-        Me.fra1to6.Controls.Add(Me.Label53)
-        Me.fra1to6.Controls.Add(Me.GroupBox6)
-        Me.fra1to6.Controls.Add(Me.Label51)
-        Me.fra1to6.Controls.Add(Me.GroupBox5)
-        Me.fra1to6.Controls.Add(Me.Label50)
-        Me.fra1to6.Controls.Add(Me.GroupBox4)
-        Me.fra1to6.Controls.Add(Me.GroupBox3)
-        Me.fra1to6.Controls.Add(Me.Label46)
-        Me.fra1to6.Controls.Add(Me.Label44)
-        Me.fra1to6.Controls.Add(Me.ShapeContainer2)
-        Me.fra1to6.Location = New System.Drawing.Point(8, 5)
-        Me.fra1to6.Margin = New System.Windows.Forms.Padding(4)
-        Me.fra1to6.Name = "fra1to6"
-        Me.fra1to6.Padding = New System.Windows.Forms.Padding(4)
-        Me.fra1to6.Size = New System.Drawing.Size(731, 527)
-        Me.fra1to6.TabIndex = 5
-        Me.fra1to6.TabStop = False
-        '
-        'Label49
-        '
-        Me.Label49.AutoSize = True
-        Me.Label49.Location = New System.Drawing.Point(18, 135)
-        Me.Label49.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label49.Name = "Label49"
-        Me.Label49.Size = New System.Drawing.Size(345, 15)
-        Me.Label49.TabIndex = 8
-        Me.Label49.Text = "b. Within the fourth degree (for Local Government Employees):"
-        '
-        'Label45
-        '
-        Me.Label45.AutoSize = True
-        Me.Label45.Location = New System.Drawing.Point(18, 75)
-        Me.Label45.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label45.Name = "Label45"
-        Me.Label45.Size = New System.Drawing.Size(153, 15)
-        Me.Label45.TabIndex = 1
-        Me.Label45.Text = "a. Within the third degree? "
-        '
-        'GroupBox8
-        '
-        Me.GroupBox8.Controls.Add(Me.txt37)
-        Me.GroupBox8.Controls.Add(Me.optNo37)
-        Me.GroupBox8.Controls.Add(Me.optYes37)
-        Me.GroupBox8.Location = New System.Drawing.Point(10, 428)
-        Me.GroupBox8.Margin = New System.Windows.Forms.Padding(4)
-        Me.GroupBox8.Name = "GroupBox8"
-        Me.GroupBox8.Padding = New System.Windows.Forms.Padding(4)
-        Me.GroupBox8.Size = New System.Drawing.Size(713, 41)
-        Me.GroupBox8.TabIndex = 21
-        Me.GroupBox8.TabStop = False
-        '
-        'txt37
-        '
-        Me.txt37.Enabled = False
-        Me.txt37.Location = New System.Drawing.Point(245, 13)
-        Me.txt37.Margin = New System.Windows.Forms.Padding(4)
-        Me.txt37.Name = "txt37"
-        Me.txt37.Size = New System.Drawing.Size(448, 21)
-        Me.txt37.TabIndex = 9
-        '
-        'optNo37
-        '
-        Me.optNo37.AutoSize = True
-        Me.optNo37.Checked = True
-        Me.optNo37.Location = New System.Drawing.Point(77, 13)
-        Me.optNo37.Margin = New System.Windows.Forms.Padding(4)
-        Me.optNo37.Name = "optNo37"
-        Me.optNo37.Size = New System.Drawing.Size(149, 19)
-        Me.optNo37.TabIndex = 8
-        Me.optNo37.TabStop = True
-        Me.optNo37.Text = "No  , If YES give details"
-        Me.optNo37.UseVisualStyleBackColor = True
-        '
-        'optYes37
-        '
-        Me.optYes37.AutoSize = True
-        Me.optYes37.Location = New System.Drawing.Point(20, 13)
-        Me.optYes37.Margin = New System.Windows.Forms.Padding(4)
-        Me.optYes37.Name = "optYes37"
-        Me.optYes37.Size = New System.Drawing.Size(45, 19)
-        Me.optYes37.TabIndex = 7
-        Me.optYes37.Text = "Yes"
-        Me.optYes37.UseVisualStyleBackColor = True
-        '
-        'Label52
-        '
-        Me.Label52.AllowDrop = True
-        Me.Label52.AutoSize = True
-        Me.Label52.Location = New System.Drawing.Point(18, 413)
-        Me.Label52.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label52.Name = "Label52"
-        Me.Label52.Size = New System.Drawing.Size(576, 15)
-        Me.Label52.TabIndex = 20
-        Me.Label52.Text = "dismissal, termination, end of term, finished contract, AWOL or phased out, in th" & _
-    "e public or private sector?"
-        '
-        'Label54
-        '
-        Me.Label54.AutoSize = True
-        Me.Label54.Location = New System.Drawing.Point(7, 398)
-        Me.Label54.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label54.Name = "Label54"
-        Me.Label54.Size = New System.Drawing.Size(703, 15)
-        Me.Label54.TabIndex = 19
-        Me.Label54.Text = "37. Have you ever been separated from the service in any of the following modes: " & _
-    "resignation, retirement, dropped from the rolls, "
-        '
-        'GroupBox7
-        '
-        Me.GroupBox7.Controls.Add(Me.txt36)
-        Me.GroupBox7.Controls.Add(Me.optNo36)
-        Me.GroupBox7.Controls.Add(Me.optYes36)
-        Me.GroupBox7.Location = New System.Drawing.Point(10, 348)
-        Me.GroupBox7.Margin = New System.Windows.Forms.Padding(4)
-        Me.GroupBox7.Name = "GroupBox7"
-        Me.GroupBox7.Padding = New System.Windows.Forms.Padding(4)
-        Me.GroupBox7.Size = New System.Drawing.Size(713, 41)
-        Me.GroupBox7.TabIndex = 18
-        Me.GroupBox7.TabStop = False
-        '
-        'txt36
-        '
-        Me.txt36.Enabled = False
-        Me.txt36.Location = New System.Drawing.Point(245, 13)
-        Me.txt36.Margin = New System.Windows.Forms.Padding(4)
-        Me.txt36.Name = "txt36"
-        Me.txt36.Size = New System.Drawing.Size(448, 21)
-        Me.txt36.TabIndex = 9
-        '
-        'optNo36
-        '
-        Me.optNo36.AutoSize = True
-        Me.optNo36.Checked = True
-        Me.optNo36.Location = New System.Drawing.Point(77, 13)
-        Me.optNo36.Margin = New System.Windows.Forms.Padding(4)
-        Me.optNo36.Name = "optNo36"
-        Me.optNo36.Size = New System.Drawing.Size(149, 19)
-        Me.optNo36.TabIndex = 8
-        Me.optNo36.TabStop = True
-        Me.optNo36.Text = "No  , If YES give details"
-        Me.optNo36.UseVisualStyleBackColor = True
-        '
-        'optYes36
-        '
-        Me.optYes36.AutoSize = True
-        Me.optYes36.Location = New System.Drawing.Point(20, 13)
-        Me.optYes36.Margin = New System.Windows.Forms.Padding(4)
-        Me.optYes36.Name = "optYes36"
-        Me.optYes36.Size = New System.Drawing.Size(45, 19)
-        Me.optYes36.TabIndex = 7
-        Me.optYes36.Text = "Yes"
-        Me.optYes36.UseVisualStyleBackColor = True
-        '
-        'Label53
-        '
-        Me.Label53.AutoSize = True
-        Me.Label53.Location = New System.Drawing.Point(7, 333)
-        Me.Label53.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label53.Name = "Label53"
-        Me.Label53.Size = New System.Drawing.Size(685, 15)
-        Me.Label53.TabIndex = 16
-        Me.Label53.Text = "36. Have you ever been convicted of any crime or violation of any law, decree, or" & _
-    "dinance or regulation by any court or tribunal?"
-        '
-        'GroupBox6
-        '
-        Me.GroupBox6.Controls.Add(Me.txt35B)
-        Me.GroupBox6.Controls.Add(Me.optNo35B)
-        Me.GroupBox6.Controls.Add(Me.optYes35B)
-        Me.GroupBox6.Location = New System.Drawing.Point(10, 279)
-        Me.GroupBox6.Margin = New System.Windows.Forms.Padding(4)
-        Me.GroupBox6.Name = "GroupBox6"
-        Me.GroupBox6.Padding = New System.Windows.Forms.Padding(4)
-        Me.GroupBox6.Size = New System.Drawing.Size(713, 41)
-        Me.GroupBox6.TabIndex = 15
-        Me.GroupBox6.TabStop = False
-        '
-        'txt35B
-        '
-        Me.txt35B.Enabled = False
-        Me.txt35B.Location = New System.Drawing.Point(245, 13)
-        Me.txt35B.Margin = New System.Windows.Forms.Padding(4)
-        Me.txt35B.Name = "txt35B"
-        Me.txt35B.Size = New System.Drawing.Size(448, 21)
-        Me.txt35B.TabIndex = 9
-        '
-        'optNo35B
-        '
-        Me.optNo35B.AutoSize = True
-        Me.optNo35B.Checked = True
-        Me.optNo35B.Location = New System.Drawing.Point(77, 13)
-        Me.optNo35B.Margin = New System.Windows.Forms.Padding(4)
-        Me.optNo35B.Name = "optNo35B"
-        Me.optNo35B.Size = New System.Drawing.Size(149, 19)
-        Me.optNo35B.TabIndex = 8
-        Me.optNo35B.TabStop = True
-        Me.optNo35B.Text = "No  , If YES give details"
-        Me.optNo35B.UseVisualStyleBackColor = True
-        '
-        'optYes35B
-        '
-        Me.optYes35B.AutoSize = True
-        Me.optYes35B.Location = New System.Drawing.Point(20, 13)
-        Me.optYes35B.Margin = New System.Windows.Forms.Padding(4)
-        Me.optYes35B.Name = "optYes35B"
-        Me.optYes35B.Size = New System.Drawing.Size(45, 19)
-        Me.optYes35B.TabIndex = 7
-        Me.optYes35B.Text = "Yes"
-        Me.optYes35B.UseVisualStyleBackColor = True
-        '
-        'Label51
-        '
-        Me.Label51.AllowDrop = True
-        Me.Label51.AutoSize = True
-        Me.Label51.Location = New System.Drawing.Point(18, 264)
-        Me.Label51.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label51.Name = "Label51"
-        Me.Label51.Size = New System.Drawing.Size(301, 15)
-        Me.Label51.TabIndex = 14
-        Me.Label51.Text = "b. Have you been criminally charged before any court?"
-        '
-        'GroupBox5
-        '
-        Me.GroupBox5.Controls.Add(Me.txt35A)
-        Me.GroupBox5.Controls.Add(Me.optNo35A)
-        Me.GroupBox5.Controls.Add(Me.optYes35A)
-        Me.GroupBox5.Location = New System.Drawing.Point(10, 215)
-        Me.GroupBox5.Margin = New System.Windows.Forms.Padding(4)
-        Me.GroupBox5.Name = "GroupBox5"
-        Me.GroupBox5.Padding = New System.Windows.Forms.Padding(4)
-        Me.GroupBox5.Size = New System.Drawing.Size(713, 41)
-        Me.GroupBox5.TabIndex = 13
-        Me.GroupBox5.TabStop = False
-        '
-        'txt35A
-        '
-        Me.txt35A.Enabled = False
-        Me.txt35A.Location = New System.Drawing.Point(245, 13)
-        Me.txt35A.Margin = New System.Windows.Forms.Padding(4)
-        Me.txt35A.Name = "txt35A"
-        Me.txt35A.Size = New System.Drawing.Size(448, 21)
-        Me.txt35A.TabIndex = 9
-        '
-        'optNo35A
-        '
-        Me.optNo35A.AutoSize = True
-        Me.optNo35A.Checked = True
-        Me.optNo35A.Location = New System.Drawing.Point(77, 13)
-        Me.optNo35A.Margin = New System.Windows.Forms.Padding(4)
-        Me.optNo35A.Name = "optNo35A"
-        Me.optNo35A.Size = New System.Drawing.Size(149, 19)
-        Me.optNo35A.TabIndex = 8
-        Me.optNo35A.TabStop = True
-        Me.optNo35A.Text = "No  , If YES give details"
-        Me.optNo35A.UseVisualStyleBackColor = True
-        '
-        'optYes35A
-        '
-        Me.optYes35A.AutoSize = True
-        Me.optYes35A.Location = New System.Drawing.Point(20, 13)
-        Me.optYes35A.Margin = New System.Windows.Forms.Padding(4)
-        Me.optYes35A.Name = "optYes35A"
-        Me.optYes35A.Size = New System.Drawing.Size(45, 19)
-        Me.optYes35A.TabIndex = 7
-        Me.optYes35A.Text = "Yes"
-        Me.optYes35A.UseVisualStyleBackColor = True
-        '
-        'Label50
-        '
-        Me.Label50.AllowDrop = True
-        Me.Label50.AutoSize = True
-        Me.Label50.Location = New System.Drawing.Point(7, 199)
-        Me.Label50.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label50.Name = "Label50"
-        Me.Label50.Size = New System.Drawing.Size(376, 15)
-        Me.Label50.TabIndex = 12
-        Me.Label50.Text = "35. a. Have you ever been found guilty of any administrative offense?"
-        '
-        'GroupBox4
-        '
-        Me.GroupBox4.Controls.Add(Me.txt34B)
-        Me.GroupBox4.Controls.Add(Me.optNo34B)
-        Me.GroupBox4.Controls.Add(Me.optYes34B)
-        Me.GroupBox4.Location = New System.Drawing.Point(10, 149)
-        Me.GroupBox4.Margin = New System.Windows.Forms.Padding(4)
-        Me.GroupBox4.Name = "GroupBox4"
-        Me.GroupBox4.Padding = New System.Windows.Forms.Padding(4)
-        Me.GroupBox4.Size = New System.Drawing.Size(713, 41)
-        Me.GroupBox4.TabIndex = 10
-        Me.GroupBox4.TabStop = False
-        '
-        'txt34B
-        '
-        Me.txt34B.Enabled = False
-        Me.txt34B.Location = New System.Drawing.Point(245, 13)
-        Me.txt34B.Margin = New System.Windows.Forms.Padding(4)
-        Me.txt34B.Name = "txt34B"
-        Me.txt34B.Size = New System.Drawing.Size(448, 21)
-        Me.txt34B.TabIndex = 9
-        '
-        'optNo34B
-        '
-        Me.optNo34B.AutoSize = True
-        Me.optNo34B.Checked = True
-        Me.optNo34B.Location = New System.Drawing.Point(77, 13)
-        Me.optNo34B.Margin = New System.Windows.Forms.Padding(4)
-        Me.optNo34B.Name = "optNo34B"
-        Me.optNo34B.Size = New System.Drawing.Size(149, 19)
-        Me.optNo34B.TabIndex = 8
-        Me.optNo34B.TabStop = True
-        Me.optNo34B.Text = "No  , If YES give details"
-        Me.optNo34B.UseVisualStyleBackColor = True
-        '
-        'optYes34B
-        '
-        Me.optYes34B.AutoSize = True
-        Me.optYes34B.Location = New System.Drawing.Point(20, 13)
-        Me.optYes34B.Margin = New System.Windows.Forms.Padding(4)
-        Me.optYes34B.Name = "optYes34B"
-        Me.optYes34B.Size = New System.Drawing.Size(45, 19)
-        Me.optYes34B.TabIndex = 7
-        Me.optYes34B.Text = "Yes"
-        Me.optYes34B.UseVisualStyleBackColor = True
-        '
-        'GroupBox3
-        '
-        Me.GroupBox3.Controls.Add(Me.txt34A)
-        Me.GroupBox3.Controls.Add(Me.optNo34A)
-        Me.GroupBox3.Controls.Add(Me.optYes34A)
-        Me.GroupBox3.Location = New System.Drawing.Point(10, 88)
-        Me.GroupBox3.Margin = New System.Windows.Forms.Padding(4)
-        Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Padding = New System.Windows.Forms.Padding(4)
-        Me.GroupBox3.Size = New System.Drawing.Size(713, 41)
-        Me.GroupBox3.TabIndex = 7
-        Me.GroupBox3.TabStop = False
-        '
-        'txt34A
-        '
-        Me.txt34A.Enabled = False
-        Me.txt34A.Location = New System.Drawing.Point(245, 13)
-        Me.txt34A.Margin = New System.Windows.Forms.Padding(4)
-        Me.txt34A.Name = "txt34A"
-        Me.txt34A.Size = New System.Drawing.Size(448, 21)
-        Me.txt34A.TabIndex = 9
-        '
-        'optNo34A
-        '
-        Me.optNo34A.AutoSize = True
-        Me.optNo34A.Checked = True
-        Me.optNo34A.Location = New System.Drawing.Point(77, 13)
-        Me.optNo34A.Margin = New System.Windows.Forms.Padding(4)
-        Me.optNo34A.Name = "optNo34A"
-        Me.optNo34A.Size = New System.Drawing.Size(149, 19)
-        Me.optNo34A.TabIndex = 8
-        Me.optNo34A.TabStop = True
-        Me.optNo34A.Text = "No  , If YES give details"
-        Me.optNo34A.UseVisualStyleBackColor = True
-        '
-        'optYes34A
-        '
-        Me.optYes34A.AutoSize = True
-        Me.optYes34A.Location = New System.Drawing.Point(20, 13)
-        Me.optYes34A.Margin = New System.Windows.Forms.Padding(4)
-        Me.optYes34A.Name = "optYes34A"
-        Me.optYes34A.Size = New System.Drawing.Size(45, 19)
-        Me.optYes34A.TabIndex = 7
-        Me.optYes34A.Text = "Yes"
-        Me.optYes34A.UseVisualStyleBackColor = True
-        '
-        'Label46
-        '
-        Me.Label46.AllowDrop = True
-        Me.Label46.AutoSize = True
-        Me.Label46.Location = New System.Drawing.Point(18, 50)
-        Me.Label46.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label46.Name = "Label46"
-        Me.Label46.Size = New System.Drawing.Size(622, 15)
-        Me.Label46.TabIndex = 2
-        Me.Label46.Text = "person who has immediate supervision over you in the Office, Bureau or Department" & _
-    " where you will be appointed,"
-        '
-        'Label44
-        '
-        Me.Label44.AutoSize = True
-        Me.Label44.Location = New System.Drawing.Point(7, 33)
-        Me.Label44.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label44.Name = "Label44"
-        Me.Label44.Size = New System.Drawing.Size(723, 15)
-        Me.Label44.TabIndex = 0
-        Me.Label44.Text = "34. Are you related by consanguinity or affinity to the appointing or recommendin" & _
-    "g authority, or to the chief of bureau or office or to the"
-        '
-        'ShapeContainer2
-        '
-        Me.ShapeContainer2.Location = New System.Drawing.Point(4, 18)
-        Me.ShapeContainer2.Margin = New System.Windows.Forms.Padding(0)
-        Me.ShapeContainer2.Name = "ShapeContainer2"
-        Me.ShapeContainer2.Shapes.AddRange(New Microsoft.VisualBasic.PowerPacks.Shape() {Me.LineShape5, Me.LineShape4, Me.LineShape3})
-        Me.ShapeContainer2.Size = New System.Drawing.Size(723, 505)
-        Me.ShapeContainer2.TabIndex = 11
-        Me.ShapeContainer2.TabStop = False
-        '
-        'LineShape5
-        '
-        Me.LineShape5.BorderWidth = 3
-        Me.LineShape5.Name = "LineShape5"
-        Me.LineShape5.X1 = 2
-        Me.LineShape5.X2 = 722
-        Me.LineShape5.Y1 = 376
-        Me.LineShape5.Y2 = 376
-        '
-        'LineShape4
-        '
-        Me.LineShape4.BorderWidth = 3
-        Me.LineShape4.Name = "LineShape4"
-        Me.LineShape4.X1 = 2
-        Me.LineShape4.X2 = 722
-        Me.LineShape4.Y1 = 306
-        Me.LineShape4.Y2 = 306
-        '
-        'LineShape3
-        '
-        Me.LineShape3.BorderWidth = 3
-        Me.LineShape3.Name = "LineShape3"
-        Me.LineShape3.X1 = 1
-        Me.LineShape3.X2 = 721
-        Me.LineShape3.Y1 = 175
-        Me.LineShape3.Y2 = 175
-        '
         'fra7to10
         '
         Me.fra7to10.Controls.Add(Me.txtYesNo40C)
@@ -4347,6 +3911,444 @@ Partial Class PersonalInfo
         Me.LineShape8.Y1 = 158
         Me.LineShape8.Y2 = 158
         '
+        'fra1to6
+        '
+        Me.fra1to6.Controls.Add(Me.Label49)
+        Me.fra1to6.Controls.Add(Me.Label45)
+        Me.fra1to6.Controls.Add(Me.GroupBox8)
+        Me.fra1to6.Controls.Add(Me.Label52)
+        Me.fra1to6.Controls.Add(Me.Label54)
+        Me.fra1to6.Controls.Add(Me.GroupBox7)
+        Me.fra1to6.Controls.Add(Me.Label53)
+        Me.fra1to6.Controls.Add(Me.GroupBox6)
+        Me.fra1to6.Controls.Add(Me.Label51)
+        Me.fra1to6.Controls.Add(Me.GroupBox5)
+        Me.fra1to6.Controls.Add(Me.Label50)
+        Me.fra1to6.Controls.Add(Me.GroupBox4)
+        Me.fra1to6.Controls.Add(Me.GroupBox3)
+        Me.fra1to6.Controls.Add(Me.Label46)
+        Me.fra1to6.Controls.Add(Me.Label44)
+        Me.fra1to6.Controls.Add(Me.ShapeContainer2)
+        Me.fra1to6.Location = New System.Drawing.Point(8, 5)
+        Me.fra1to6.Margin = New System.Windows.Forms.Padding(4)
+        Me.fra1to6.Name = "fra1to6"
+        Me.fra1to6.Padding = New System.Windows.Forms.Padding(4)
+        Me.fra1to6.Size = New System.Drawing.Size(731, 527)
+        Me.fra1to6.TabIndex = 5
+        Me.fra1to6.TabStop = False
+        '
+        'Label49
+        '
+        Me.Label49.AutoSize = True
+        Me.Label49.Location = New System.Drawing.Point(18, 135)
+        Me.Label49.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label49.Name = "Label49"
+        Me.Label49.Size = New System.Drawing.Size(345, 15)
+        Me.Label49.TabIndex = 8
+        Me.Label49.Text = "b. Within the fourth degree (for Local Government Employees):"
+        '
+        'Label45
+        '
+        Me.Label45.AutoSize = True
+        Me.Label45.Location = New System.Drawing.Point(18, 75)
+        Me.Label45.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label45.Name = "Label45"
+        Me.Label45.Size = New System.Drawing.Size(153, 15)
+        Me.Label45.TabIndex = 1
+        Me.Label45.Text = "a. Within the third degree? "
+        '
+        'GroupBox8
+        '
+        Me.GroupBox8.Controls.Add(Me.txt37)
+        Me.GroupBox8.Controls.Add(Me.optNo37)
+        Me.GroupBox8.Controls.Add(Me.optYes37)
+        Me.GroupBox8.Location = New System.Drawing.Point(10, 428)
+        Me.GroupBox8.Margin = New System.Windows.Forms.Padding(4)
+        Me.GroupBox8.Name = "GroupBox8"
+        Me.GroupBox8.Padding = New System.Windows.Forms.Padding(4)
+        Me.GroupBox8.Size = New System.Drawing.Size(713, 41)
+        Me.GroupBox8.TabIndex = 21
+        Me.GroupBox8.TabStop = False
+        '
+        'txt37
+        '
+        Me.txt37.Enabled = False
+        Me.txt37.Location = New System.Drawing.Point(245, 13)
+        Me.txt37.Margin = New System.Windows.Forms.Padding(4)
+        Me.txt37.Name = "txt37"
+        Me.txt37.Size = New System.Drawing.Size(448, 21)
+        Me.txt37.TabIndex = 9
+        '
+        'optNo37
+        '
+        Me.optNo37.AutoSize = True
+        Me.optNo37.Checked = True
+        Me.optNo37.Location = New System.Drawing.Point(77, 13)
+        Me.optNo37.Margin = New System.Windows.Forms.Padding(4)
+        Me.optNo37.Name = "optNo37"
+        Me.optNo37.Size = New System.Drawing.Size(149, 19)
+        Me.optNo37.TabIndex = 8
+        Me.optNo37.TabStop = True
+        Me.optNo37.Text = "No  , If YES give details"
+        Me.optNo37.UseVisualStyleBackColor = True
+        '
+        'optYes37
+        '
+        Me.optYes37.AutoSize = True
+        Me.optYes37.Location = New System.Drawing.Point(20, 13)
+        Me.optYes37.Margin = New System.Windows.Forms.Padding(4)
+        Me.optYes37.Name = "optYes37"
+        Me.optYes37.Size = New System.Drawing.Size(45, 19)
+        Me.optYes37.TabIndex = 7
+        Me.optYes37.Text = "Yes"
+        Me.optYes37.UseVisualStyleBackColor = True
+        '
+        'Label52
+        '
+        Me.Label52.AllowDrop = True
+        Me.Label52.AutoSize = True
+        Me.Label52.Location = New System.Drawing.Point(18, 413)
+        Me.Label52.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label52.Name = "Label52"
+        Me.Label52.Size = New System.Drawing.Size(576, 15)
+        Me.Label52.TabIndex = 20
+        Me.Label52.Text = "dismissal, termination, end of term, finished contract, AWOL or phased out, in th" & _
+    "e public or private sector?"
+        '
+        'Label54
+        '
+        Me.Label54.AutoSize = True
+        Me.Label54.Location = New System.Drawing.Point(7, 398)
+        Me.Label54.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label54.Name = "Label54"
+        Me.Label54.Size = New System.Drawing.Size(703, 15)
+        Me.Label54.TabIndex = 19
+        Me.Label54.Text = "37. Have you ever been separated from the service in any of the following modes: " & _
+    "resignation, retirement, dropped from the rolls, "
+        '
+        'GroupBox7
+        '
+        Me.GroupBox7.Controls.Add(Me.txt36)
+        Me.GroupBox7.Controls.Add(Me.optNo36)
+        Me.GroupBox7.Controls.Add(Me.optYes36)
+        Me.GroupBox7.Location = New System.Drawing.Point(10, 348)
+        Me.GroupBox7.Margin = New System.Windows.Forms.Padding(4)
+        Me.GroupBox7.Name = "GroupBox7"
+        Me.GroupBox7.Padding = New System.Windows.Forms.Padding(4)
+        Me.GroupBox7.Size = New System.Drawing.Size(713, 41)
+        Me.GroupBox7.TabIndex = 18
+        Me.GroupBox7.TabStop = False
+        '
+        'txt36
+        '
+        Me.txt36.Enabled = False
+        Me.txt36.Location = New System.Drawing.Point(245, 13)
+        Me.txt36.Margin = New System.Windows.Forms.Padding(4)
+        Me.txt36.Name = "txt36"
+        Me.txt36.Size = New System.Drawing.Size(448, 21)
+        Me.txt36.TabIndex = 9
+        '
+        'optNo36
+        '
+        Me.optNo36.AutoSize = True
+        Me.optNo36.Checked = True
+        Me.optNo36.Location = New System.Drawing.Point(77, 13)
+        Me.optNo36.Margin = New System.Windows.Forms.Padding(4)
+        Me.optNo36.Name = "optNo36"
+        Me.optNo36.Size = New System.Drawing.Size(149, 19)
+        Me.optNo36.TabIndex = 8
+        Me.optNo36.TabStop = True
+        Me.optNo36.Text = "No  , If YES give details"
+        Me.optNo36.UseVisualStyleBackColor = True
+        '
+        'optYes36
+        '
+        Me.optYes36.AutoSize = True
+        Me.optYes36.Location = New System.Drawing.Point(20, 13)
+        Me.optYes36.Margin = New System.Windows.Forms.Padding(4)
+        Me.optYes36.Name = "optYes36"
+        Me.optYes36.Size = New System.Drawing.Size(45, 19)
+        Me.optYes36.TabIndex = 7
+        Me.optYes36.Text = "Yes"
+        Me.optYes36.UseVisualStyleBackColor = True
+        '
+        'Label53
+        '
+        Me.Label53.AutoSize = True
+        Me.Label53.Location = New System.Drawing.Point(7, 333)
+        Me.Label53.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label53.Name = "Label53"
+        Me.Label53.Size = New System.Drawing.Size(685, 15)
+        Me.Label53.TabIndex = 16
+        Me.Label53.Text = "36. Have you ever been convicted of any crime or violation of any law, decree, or" & _
+    "dinance or regulation by any court or tribunal?"
+        '
+        'GroupBox6
+        '
+        Me.GroupBox6.Controls.Add(Me.txt35B)
+        Me.GroupBox6.Controls.Add(Me.optNo35B)
+        Me.GroupBox6.Controls.Add(Me.optYes35B)
+        Me.GroupBox6.Location = New System.Drawing.Point(10, 279)
+        Me.GroupBox6.Margin = New System.Windows.Forms.Padding(4)
+        Me.GroupBox6.Name = "GroupBox6"
+        Me.GroupBox6.Padding = New System.Windows.Forms.Padding(4)
+        Me.GroupBox6.Size = New System.Drawing.Size(713, 41)
+        Me.GroupBox6.TabIndex = 15
+        Me.GroupBox6.TabStop = False
+        '
+        'txt35B
+        '
+        Me.txt35B.Enabled = False
+        Me.txt35B.Location = New System.Drawing.Point(245, 13)
+        Me.txt35B.Margin = New System.Windows.Forms.Padding(4)
+        Me.txt35B.Name = "txt35B"
+        Me.txt35B.Size = New System.Drawing.Size(448, 21)
+        Me.txt35B.TabIndex = 9
+        '
+        'optNo35B
+        '
+        Me.optNo35B.AutoSize = True
+        Me.optNo35B.Checked = True
+        Me.optNo35B.Location = New System.Drawing.Point(77, 13)
+        Me.optNo35B.Margin = New System.Windows.Forms.Padding(4)
+        Me.optNo35B.Name = "optNo35B"
+        Me.optNo35B.Size = New System.Drawing.Size(149, 19)
+        Me.optNo35B.TabIndex = 8
+        Me.optNo35B.TabStop = True
+        Me.optNo35B.Text = "No  , If YES give details"
+        Me.optNo35B.UseVisualStyleBackColor = True
+        '
+        'optYes35B
+        '
+        Me.optYes35B.AutoSize = True
+        Me.optYes35B.Location = New System.Drawing.Point(20, 13)
+        Me.optYes35B.Margin = New System.Windows.Forms.Padding(4)
+        Me.optYes35B.Name = "optYes35B"
+        Me.optYes35B.Size = New System.Drawing.Size(45, 19)
+        Me.optYes35B.TabIndex = 7
+        Me.optYes35B.Text = "Yes"
+        Me.optYes35B.UseVisualStyleBackColor = True
+        '
+        'Label51
+        '
+        Me.Label51.AllowDrop = True
+        Me.Label51.AutoSize = True
+        Me.Label51.Location = New System.Drawing.Point(18, 264)
+        Me.Label51.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label51.Name = "Label51"
+        Me.Label51.Size = New System.Drawing.Size(301, 15)
+        Me.Label51.TabIndex = 14
+        Me.Label51.Text = "b. Have you been criminally charged before any court?"
+        '
+        'GroupBox5
+        '
+        Me.GroupBox5.Controls.Add(Me.txt35A)
+        Me.GroupBox5.Controls.Add(Me.optNo35A)
+        Me.GroupBox5.Controls.Add(Me.optYes35A)
+        Me.GroupBox5.Location = New System.Drawing.Point(10, 215)
+        Me.GroupBox5.Margin = New System.Windows.Forms.Padding(4)
+        Me.GroupBox5.Name = "GroupBox5"
+        Me.GroupBox5.Padding = New System.Windows.Forms.Padding(4)
+        Me.GroupBox5.Size = New System.Drawing.Size(713, 41)
+        Me.GroupBox5.TabIndex = 13
+        Me.GroupBox5.TabStop = False
+        '
+        'txt35A
+        '
+        Me.txt35A.Enabled = False
+        Me.txt35A.Location = New System.Drawing.Point(245, 13)
+        Me.txt35A.Margin = New System.Windows.Forms.Padding(4)
+        Me.txt35A.Name = "txt35A"
+        Me.txt35A.Size = New System.Drawing.Size(448, 21)
+        Me.txt35A.TabIndex = 9
+        '
+        'optNo35A
+        '
+        Me.optNo35A.AutoSize = True
+        Me.optNo35A.Checked = True
+        Me.optNo35A.Location = New System.Drawing.Point(77, 13)
+        Me.optNo35A.Margin = New System.Windows.Forms.Padding(4)
+        Me.optNo35A.Name = "optNo35A"
+        Me.optNo35A.Size = New System.Drawing.Size(149, 19)
+        Me.optNo35A.TabIndex = 8
+        Me.optNo35A.TabStop = True
+        Me.optNo35A.Text = "No  , If YES give details"
+        Me.optNo35A.UseVisualStyleBackColor = True
+        '
+        'optYes35A
+        '
+        Me.optYes35A.AutoSize = True
+        Me.optYes35A.Location = New System.Drawing.Point(20, 13)
+        Me.optYes35A.Margin = New System.Windows.Forms.Padding(4)
+        Me.optYes35A.Name = "optYes35A"
+        Me.optYes35A.Size = New System.Drawing.Size(45, 19)
+        Me.optYes35A.TabIndex = 7
+        Me.optYes35A.Text = "Yes"
+        Me.optYes35A.UseVisualStyleBackColor = True
+        '
+        'Label50
+        '
+        Me.Label50.AllowDrop = True
+        Me.Label50.AutoSize = True
+        Me.Label50.Location = New System.Drawing.Point(7, 199)
+        Me.Label50.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label50.Name = "Label50"
+        Me.Label50.Size = New System.Drawing.Size(376, 15)
+        Me.Label50.TabIndex = 12
+        Me.Label50.Text = "35. a. Have you ever been found guilty of any administrative offense?"
+        '
+        'GroupBox4
+        '
+        Me.GroupBox4.Controls.Add(Me.txt34B)
+        Me.GroupBox4.Controls.Add(Me.optNo34B)
+        Me.GroupBox4.Controls.Add(Me.optYes34B)
+        Me.GroupBox4.Location = New System.Drawing.Point(10, 149)
+        Me.GroupBox4.Margin = New System.Windows.Forms.Padding(4)
+        Me.GroupBox4.Name = "GroupBox4"
+        Me.GroupBox4.Padding = New System.Windows.Forms.Padding(4)
+        Me.GroupBox4.Size = New System.Drawing.Size(713, 41)
+        Me.GroupBox4.TabIndex = 10
+        Me.GroupBox4.TabStop = False
+        '
+        'txt34B
+        '
+        Me.txt34B.Enabled = False
+        Me.txt34B.Location = New System.Drawing.Point(245, 13)
+        Me.txt34B.Margin = New System.Windows.Forms.Padding(4)
+        Me.txt34B.Name = "txt34B"
+        Me.txt34B.Size = New System.Drawing.Size(448, 21)
+        Me.txt34B.TabIndex = 9
+        '
+        'optNo34B
+        '
+        Me.optNo34B.AutoSize = True
+        Me.optNo34B.Checked = True
+        Me.optNo34B.Location = New System.Drawing.Point(77, 13)
+        Me.optNo34B.Margin = New System.Windows.Forms.Padding(4)
+        Me.optNo34B.Name = "optNo34B"
+        Me.optNo34B.Size = New System.Drawing.Size(149, 19)
+        Me.optNo34B.TabIndex = 8
+        Me.optNo34B.TabStop = True
+        Me.optNo34B.Text = "No  , If YES give details"
+        Me.optNo34B.UseVisualStyleBackColor = True
+        '
+        'optYes34B
+        '
+        Me.optYes34B.AutoSize = True
+        Me.optYes34B.Location = New System.Drawing.Point(20, 13)
+        Me.optYes34B.Margin = New System.Windows.Forms.Padding(4)
+        Me.optYes34B.Name = "optYes34B"
+        Me.optYes34B.Size = New System.Drawing.Size(45, 19)
+        Me.optYes34B.TabIndex = 7
+        Me.optYes34B.Text = "Yes"
+        Me.optYes34B.UseVisualStyleBackColor = True
+        '
+        'GroupBox3
+        '
+        Me.GroupBox3.Controls.Add(Me.txt34A)
+        Me.GroupBox3.Controls.Add(Me.optNo34A)
+        Me.GroupBox3.Controls.Add(Me.optYes34A)
+        Me.GroupBox3.Location = New System.Drawing.Point(10, 88)
+        Me.GroupBox3.Margin = New System.Windows.Forms.Padding(4)
+        Me.GroupBox3.Name = "GroupBox3"
+        Me.GroupBox3.Padding = New System.Windows.Forms.Padding(4)
+        Me.GroupBox3.Size = New System.Drawing.Size(713, 41)
+        Me.GroupBox3.TabIndex = 7
+        Me.GroupBox3.TabStop = False
+        '
+        'txt34A
+        '
+        Me.txt34A.Enabled = False
+        Me.txt34A.Location = New System.Drawing.Point(245, 13)
+        Me.txt34A.Margin = New System.Windows.Forms.Padding(4)
+        Me.txt34A.Name = "txt34A"
+        Me.txt34A.Size = New System.Drawing.Size(448, 21)
+        Me.txt34A.TabIndex = 9
+        '
+        'optNo34A
+        '
+        Me.optNo34A.AutoSize = True
+        Me.optNo34A.Checked = True
+        Me.optNo34A.Location = New System.Drawing.Point(77, 13)
+        Me.optNo34A.Margin = New System.Windows.Forms.Padding(4)
+        Me.optNo34A.Name = "optNo34A"
+        Me.optNo34A.Size = New System.Drawing.Size(149, 19)
+        Me.optNo34A.TabIndex = 8
+        Me.optNo34A.TabStop = True
+        Me.optNo34A.Text = "No  , If YES give details"
+        Me.optNo34A.UseVisualStyleBackColor = True
+        '
+        'optYes34A
+        '
+        Me.optYes34A.AutoSize = True
+        Me.optYes34A.Location = New System.Drawing.Point(20, 13)
+        Me.optYes34A.Margin = New System.Windows.Forms.Padding(4)
+        Me.optYes34A.Name = "optYes34A"
+        Me.optYes34A.Size = New System.Drawing.Size(45, 19)
+        Me.optYes34A.TabIndex = 7
+        Me.optYes34A.Text = "Yes"
+        Me.optYes34A.UseVisualStyleBackColor = True
+        '
+        'Label46
+        '
+        Me.Label46.AllowDrop = True
+        Me.Label46.AutoSize = True
+        Me.Label46.Location = New System.Drawing.Point(18, 50)
+        Me.Label46.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label46.Name = "Label46"
+        Me.Label46.Size = New System.Drawing.Size(622, 15)
+        Me.Label46.TabIndex = 2
+        Me.Label46.Text = "person who has immediate supervision over you in the Office, Bureau or Department" & _
+    " where you will be appointed,"
+        '
+        'Label44
+        '
+        Me.Label44.AutoSize = True
+        Me.Label44.Location = New System.Drawing.Point(7, 33)
+        Me.Label44.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label44.Name = "Label44"
+        Me.Label44.Size = New System.Drawing.Size(723, 15)
+        Me.Label44.TabIndex = 0
+        Me.Label44.Text = "34. Are you related by consanguinity or affinity to the appointing or recommendin" & _
+    "g authority, or to the chief of bureau or office or to the"
+        '
+        'ShapeContainer2
+        '
+        Me.ShapeContainer2.Location = New System.Drawing.Point(4, 18)
+        Me.ShapeContainer2.Margin = New System.Windows.Forms.Padding(0)
+        Me.ShapeContainer2.Name = "ShapeContainer2"
+        Me.ShapeContainer2.Shapes.AddRange(New Microsoft.VisualBasic.PowerPacks.Shape() {Me.LineShape5, Me.LineShape4, Me.LineShape3})
+        Me.ShapeContainer2.Size = New System.Drawing.Size(723, 505)
+        Me.ShapeContainer2.TabIndex = 11
+        Me.ShapeContainer2.TabStop = False
+        '
+        'LineShape5
+        '
+        Me.LineShape5.BorderWidth = 3
+        Me.LineShape5.Name = "LineShape5"
+        Me.LineShape5.X1 = 2
+        Me.LineShape5.X2 = 722
+        Me.LineShape5.Y1 = 376
+        Me.LineShape5.Y2 = 376
+        '
+        'LineShape4
+        '
+        Me.LineShape4.BorderWidth = 3
+        Me.LineShape4.Name = "LineShape4"
+        Me.LineShape4.X1 = 2
+        Me.LineShape4.X2 = 722
+        Me.LineShape4.Y1 = 306
+        Me.LineShape4.Y2 = 306
+        '
+        'LineShape3
+        '
+        Me.LineShape3.BorderWidth = 3
+        Me.LineShape3.Name = "LineShape3"
+        Me.LineShape3.X1 = 1
+        Me.LineShape3.X2 = 721
+        Me.LineShape3.Y1 = 175
+        Me.LineShape3.Y2 = 175
+        '
         'ContextMenu1
         '
         Me.ContextMenu1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tsmLV33Edit, Me.tsmLV33Delete})
@@ -4425,6 +4427,8 @@ Partial Class PersonalInfo
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.cmdRefresh)
         Me.Controls.Add(Me.Button14)
+        Me.Controls.Add(Me.txtRTel)
+        Me.Controls.Add(Me.Label15)
         Me.Controls.Add(Me.txtTempEmpno)
         Me.Controls.Add(Me.Button13)
         Me.Controls.Add(Me.Button1)
@@ -4474,20 +4478,6 @@ Partial Class PersonalInfo
         Me.Panel1.PerformLayout()
         Me.TabControl1.ResumeLayout(False)
         Me.TabPage7.ResumeLayout(False)
-        Me.fra1to6.ResumeLayout(False)
-        Me.fra1to6.PerformLayout()
-        Me.GroupBox8.ResumeLayout(False)
-        Me.GroupBox8.PerformLayout()
-        Me.GroupBox7.ResumeLayout(False)
-        Me.GroupBox7.PerformLayout()
-        Me.GroupBox6.ResumeLayout(False)
-        Me.GroupBox6.PerformLayout()
-        Me.GroupBox5.ResumeLayout(False)
-        Me.GroupBox5.PerformLayout()
-        Me.GroupBox4.ResumeLayout(False)
-        Me.GroupBox4.PerformLayout()
-        Me.GroupBox3.ResumeLayout(False)
-        Me.GroupBox3.PerformLayout()
         Me.fra7to10.ResumeLayout(False)
         Me.fra7to10.PerformLayout()
         Me.GroupBox2.ResumeLayout(False)
@@ -4502,6 +4492,20 @@ Partial Class PersonalInfo
         Me.GroupBox10.PerformLayout()
         Me.GroupBox15.ResumeLayout(False)
         Me.GroupBox15.PerformLayout()
+        Me.fra1to6.ResumeLayout(False)
+        Me.fra1to6.PerformLayout()
+        Me.GroupBox8.ResumeLayout(False)
+        Me.GroupBox8.PerformLayout()
+        Me.GroupBox7.ResumeLayout(False)
+        Me.GroupBox7.PerformLayout()
+        Me.GroupBox6.ResumeLayout(False)
+        Me.GroupBox6.PerformLayout()
+        Me.GroupBox5.ResumeLayout(False)
+        Me.GroupBox5.PerformLayout()
+        Me.GroupBox4.ResumeLayout(False)
+        Me.GroupBox4.PerformLayout()
+        Me.GroupBox3.ResumeLayout(False)
+        Me.GroupBox3.PerformLayout()
         Me.ContextMenu1.ResumeLayout(False)
         Me.ContextMenu2.ResumeLayout(False)
         Me.ContextMenu3.ResumeLayout(False)

@@ -47,6 +47,7 @@ Partial Class frmAEWorkExp
         Me.txtCTRL = New System.Windows.Forms.TextBox()
         Me.ckbPresent = New System.Windows.Forms.CheckBox()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.btnSaveClose = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label1
@@ -236,7 +237,7 @@ Partial Class frmAEWorkExp
         'cmdSave
         '
         Me.cmdSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.cmdSave.Location = New System.Drawing.Point(363, 312)
+        Me.cmdSave.Location = New System.Drawing.Point(181, 312)
         Me.cmdSave.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
         Me.cmdSave.Name = "cmdSave"
         Me.cmdSave.Size = New System.Drawing.Size(125, 32)
@@ -303,6 +304,17 @@ Partial Class frmAEWorkExp
         Me.Button1.Text = "..."
         Me.Button1.UseVisualStyleBackColor = True
         '
+        'btnSaveClose
+        '
+        Me.btnSaveClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnSaveClose.Location = New System.Drawing.Point(314, 312)
+        Me.btnSaveClose.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.btnSaveClose.Name = "btnSaveClose"
+        Me.btnSaveClose.Size = New System.Drawing.Size(172, 32)
+        Me.btnSaveClose.TabIndex = 11
+        Me.btnSaveClose.Text = "SAVE AND CLOSE"
+        Me.btnSaveClose.UseVisualStyleBackColor = True
+        '
         'frmAEWorkExp
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(10.0!, 18.0!)
@@ -316,6 +328,7 @@ Partial Class frmAEWorkExp
         Me.Controls.Add(Me.txtService)
         Me.Controls.Add(Me.txtEmpNo)
         Me.Controls.Add(Me.cmdCancel)
+        Me.Controls.Add(Me.btnSaveClose)
         Me.Controls.Add(Me.cmdSave)
         Me.Controls.Add(Me.optNo)
         Me.Controls.Add(Me.optYes)
@@ -371,4 +384,5 @@ Partial Class frmAEWorkExp
     Friend WithEvents txtCTRL As System.Windows.Forms.TextBox
     Friend WithEvents ckbPresent As System.Windows.Forms.CheckBox
     Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents btnSaveClose As System.Windows.Forms.Button
 End Class

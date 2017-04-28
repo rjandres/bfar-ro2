@@ -439,18 +439,25 @@ Public Class PersonalInfo
             ' Split the Permanent Address
             Dim sPermanent As String
             sPermanent = IIf(Not IsDBNull(.Item("paddress")), .Item("paddress"), "")
+            If sPermanent <> "" Then
+                Dim fieldsPermanent() As String
 
-            Dim fieldsPermanent() As String
-
-            fieldsPermanent = Split(sPermanent, ",")
-            txtPAddress.Text = Trim$(fieldsPermanent(0))
-            txtPStreet.Text = Trim$(fieldsPermanent(1))
-            txtPSubdivision.Text = Trim$(fieldsPermanent(2))
-            txtPBarangay.Text = Trim$(fieldsPermanent(3))
-            txtPCity.Text = Trim$(fieldsPermanent(4))
-            txtPProvince.Text = Trim$(fieldsPermanent(5))
-            'end split
-
+                fieldsPermanent = Split(sPermanent, ",")
+                txtPAddress.Text = IIf(Trim$(fieldsPermanent(0)) <> "", Trim$(fieldsPermanent(0)), "")
+                txtPStreet.Text = IIf(Trim$(fieldsPermanent(1)) <> "", Trim$(fieldsPermanent(1)), "")
+                txtPSubdivision.Text = IIf(Trim$(fieldsPermanent(2)) <> "", Trim$(fieldsPermanent(2)), "")
+                txtPBarangay.Text = IIf(Trim$(fieldsPermanent(3)) <> "", Trim$(fieldsPermanent(3)), "")
+                txtPCity.Text = IIf(Trim$(fieldsPermanent(4)) <> "", Trim$(fieldsPermanent(4)), "")
+                txtPProvince.Text = IIf(Trim$(fieldsPermanent(5)) = "", "", Trim$(fieldsPermanent(5)))
+                'end split
+            Else
+                txtPAddress.Text = ""
+                txtPStreet.Text = ""
+                txtPSubdivision.Text = ""
+                txtPBarangay.Text = ""
+                txtPCity.Text = ""
+                txtPProvince.Text = ""
+            End If
             'Me.txtPAddress.Text = IIf(Not IsDBNull(.Item("paddress")), .Item("paddress"), "")
             'Me.txtRTel.Text = IIf(Not IsDBNull(.Item("telephone")), .Item("telephone"), "")
             Me.txtRZIPCode.Text = IIf(Not IsDBNull(.Item("zipcode")), .Item("zipcode"), "")
@@ -459,17 +466,25 @@ Public Class PersonalInfo
             ' Split the Residential Address
             Dim sResidential As String
             sResidential = IIf(Not IsDBNull(.Item("raddress")), .Item("raddress"), "")
+            If sResidential <> "" Then
+                Dim fieldsResidentials() As String
 
-            Dim fieldsResidentials() As String
-
-            fieldsResidentials = Split(sResidential, ",")
-            txtRAddress.Text = Trim$(fieldsResidentials(0))
-            txtRStreet.Text = Trim$(fieldsResidentials(1))
-            txtRSubdivision.Text = Trim$(fieldsResidentials(2))
-            txtRBarangay.Text = Trim$(fieldsResidentials(3))
-            txtRCity.Text = Trim$(fieldsResidentials(4))
-            txtRProvince.Text = Trim$(fieldsResidentials(5))
-            'end split
+                fieldsResidentials = Split(sResidential, ",")
+                txtRAddress.Text = IIf(Trim$(fieldsResidentials(0)) <> "", Trim$(fieldsResidentials(0)), "")
+                txtRStreet.Text = IIf(Trim$(fieldsResidentials(1)) <> "", Trim$(fieldsResidentials(1)), "")
+                txtRSubdivision.Text = IIf(Trim$(fieldsResidentials(2)) <> "", Trim$(fieldsResidentials(2)), "")
+                txtRBarangay.Text = IIf(Trim$(fieldsResidentials(3)) <> "", Trim$(fieldsResidentials(3)), "")
+                txtRCity.Text = IIf(Trim$(fieldsResidentials(4)) <> "", Trim$(fieldsResidentials(4)), "")
+                txtRProvince.Text = IIf(Trim$(fieldsResidentials(5)) <> "", Trim$(fieldsResidentials(5)), "")
+                'end split
+            Else
+                txtRAddress.Text = ""
+                txtRStreet.Text = ""
+                txtRSubdivision.Text = ""
+                txtRBarangay.Text = ""
+                txtRCity.Text = ""
+                txtRProvince.Text = ""
+            End If
 
             Me.txtBlood.Text = IIf(Not IsDBNull(.Item("bloodtype")), .Item("bloodtype"), "")
             Me.txtWeight.Text = IIf(Not IsDBNull(.Item("weight")), .Item("weight"), "")
@@ -737,7 +752,7 @@ Public Class PersonalInfo
     Private Sub callWorkExperience()
         'On Error Resume Next
         Dim i As Integer
-        strSQLWork = "SELECT * from tbl_emp_experience where empno = '" & txtEmpNo.Text & "'order by DATE('InclusiveFrom')"
+        strSQLWork = "SELECT * from tbl_emp_experience where empno = '" & txtEmpNo.Text & "' order by date('InclusiveFrom')"
         'CONNECTION.Open()
         cmdWork = New MySqlCommand(strSQLWork, CONNECTION)
         drWork = cmdWork.ExecuteReader()
@@ -1054,6 +1069,7 @@ Public Class PersonalInfo
         callPersonalInfo()
         txtTotNum.Text = pNav + 1 & " of " & MaxRow
         QSave = 0
+        TabPage1.ForeColor = Color.White
     End Sub
 
     'Navigation buttons
@@ -1917,6 +1933,7 @@ Public Class PersonalInfo
 
     Private Sub cmdWorkAddSave_Click(sender As Object, e As EventArgs) Handles cmdWorkAddSave.Click
         frmAEWorkExp.txtEmpNo.Text = txtEmpNo.Text
+        frmAEWorkExp.cmdSave.Enabled = True
         btnAction = 2
         frmAEWorkExp.ShowDialog()
     End Sub
@@ -1951,6 +1968,7 @@ Public Class PersonalInfo
                 frmAEWorkExp.optNo.Select()
                 frmAEWorkExp.txtService.Text = "No"
             End If
+            frmAEWorkExp.cmdSave.Enabled = False
             btnAction = 1
             frmAEWorkExp.ShowDialog()
         Else
@@ -1959,6 +1977,7 @@ Public Class PersonalInfo
     End Sub
     Private Sub cmdTrainingAdd_Click(sender As Object, e As EventArgs) Handles cmdTrainingAdd.Click
         frmAETraining.txtEmpNo.Text = txtEmpNo.Text
+        frmAETraining.cmdSave.Enabled = True
         btnAction = 2
         frmAETraining.ShowDialog()
     End Sub
@@ -1974,6 +1993,7 @@ Public Class PersonalInfo
             frmAETraining.txtSearchTitle.Text = lvTrainings.SelectedItems(0).SubItems(1).Text
             frmAETraining.txtCTRL.Text = lvTrainings.SelectedItems(0).SubItems(6).Text
             frmAETraining.cbType.Text = lvTrainings.SelectedItems(0).SubItems(7).Text
+            frmAETraining.cmdSave.Enabled = False
             btnAction = 1
             frmAETraining.ShowDialog()
         Else

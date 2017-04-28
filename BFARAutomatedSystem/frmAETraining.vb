@@ -88,8 +88,10 @@ Public Class frmAETraining
         btnAction = 0
         CONNECTION.Close()
         Call PersonalInfo.callPersonalInfo()
-        Me.Dispose()
-        Me.Close()
+        txtTitle.Text = ""
+        txtConduct.Text = ""
+        cbType.Text = ""
+        txtTitle.Focus()
     End Sub
 
     Private Sub cmdCancel_Click(sender As Object, e As EventArgs) Handles cmdCancel.Click
@@ -115,5 +117,66 @@ Public Class frmAETraining
             dtTo.Focus()
         End If
         txtHours.Text = (DateDiff(DateInterval.Day, dtFrom.Value, dtTo.Value) + 1) * 8
+    End Sub
+
+    Private Sub btnSaveClose_Click(sender As Object, e As EventArgs) Handles btnSaveClose.Click
+        On Error Resume Next
+        Dim sql, sqlSearch As String
+        Dim SqlCommand As New MySqlCommand
+        Dim Count As Integer
+
+        If txtTitle.Text = "" Then
+            MsgBox("Please fill-up Title of Seminar...")
+            txtTitle.Focus()
+            Exit Sub
+        End If
+        If txtConduct.Text = "" Then
+            MsgBox("Please fill-up Conducted/Sponsored...")
+            txtConduct.Focus()
+            Exit Sub
+        End If
+        If txtHours.Text = "" Then
+            MsgBox("Please fill-up Hours....")
+            txtHours.Focus()
+            Exit Sub
+        End If
+
+        CONNECTION.Open()
+        If btnAction = 1 Then
+            sql = "UPDATE tbl_trainings SET empno= '" & txtEmpNo.Text & _
+            "', TitleofSeminar='" & txtTitle.Text & _
+            "', InclusiveDatesFrom='" & dtFrom.Text & _
+            "', InclusiveDatesTo='" & dtTo.Text & _
+            "', NumberOfHours='" & txtHours.Text & _
+            "', TypeofTraining='" & cbType.Text & _
+            "', ConductedSponsoredBy='" & txtConduct.Text & "' WHERE empno = '" & txtEmpNo.Text & "' AND ctrno='" & txtCTRL.Text & "'"
+
+        ElseIf btnAction = 2 Then
+            sql = "INSERT INTO tbl_trainings SET empno= '" & txtEmpNo.Text & _
+            "', TitleofSeminar='" & txtTitle.Text & _
+            "', InclusiveDatesFrom='" & dtFrom.Text & _
+            "', InclusiveDatesTo='" & dtTo.Text & _
+            "', NumberOfHours='" & txtHours.Text & _
+            "', TypeofTraining='" & cbType.Text & _
+            "', ConductedSponsoredBy='" & txtConduct.Text & "'"
+        End If
+        SqlCommand.Connection = CONNECTION
+        SqlCommand.CommandText = sql
+
+        Count = SqlCommand.ExecuteNonQuery()
+        If Count = 0 Then
+            MsgBox("No record found")
+            CONNECTION.Close()
+            Exit Sub
+        Else
+            MsgBox("Records updated")
+        End If
+        SqlCommand.Dispose()
+
+        btnAction = 0
+        CONNECTION.Close()
+        Call PersonalInfo.callPersonalInfo()
+        Me.Dispose()
+        Me.Close()
     End Sub
 End Class

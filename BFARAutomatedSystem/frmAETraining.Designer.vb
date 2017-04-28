@@ -39,6 +39,7 @@ Partial Class frmAETraining
         Me.txtCTRL = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.cbType = New System.Windows.Forms.ComboBox()
+        Me.btnSaveClose = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label1
@@ -138,7 +139,7 @@ Partial Class frmAETraining
         'cmdSave
         '
         Me.cmdSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.cmdSave.Location = New System.Drawing.Point(362, 216)
+        Me.cmdSave.Location = New System.Drawing.Point(187, 216)
         Me.cmdSave.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
         Me.cmdSave.Name = "cmdSave"
         Me.cmdSave.Size = New System.Drawing.Size(125, 32)
@@ -205,6 +206,17 @@ Partial Class frmAETraining
         Me.cbType.Size = New System.Drawing.Size(261, 26)
         Me.cbType.TabIndex = 2
         '
+        'btnSaveClose
+        '
+        Me.btnSaveClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnSaveClose.Location = New System.Drawing.Point(322, 216)
+        Me.btnSaveClose.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.btnSaveClose.Name = "btnSaveClose"
+        Me.btnSaveClose.Size = New System.Drawing.Size(165, 32)
+        Me.btnSaveClose.TabIndex = 6
+        Me.btnSaveClose.Text = "S&AVE AND CLOSE"
+        Me.btnSaveClose.UseVisualStyleBackColor = True
+        '
         'frmAETraining
         '
         Me.AcceptButton = Me.cmdSave
@@ -219,6 +231,7 @@ Partial Class frmAETraining
         Me.Controls.Add(Me.txtSearchTitle)
         Me.Controls.Add(Me.txtEmpNo)
         Me.Controls.Add(Me.cmdCancel)
+        Me.Controls.Add(Me.btnSaveClose)
         Me.Controls.Add(Me.cmdSave)
         Me.Controls.Add(Me.txtConduct)
         Me.Controls.Add(Me.Label5)
@@ -260,4 +273,5 @@ Partial Class frmAETraining
     Friend WithEvents txtCTRL As System.Windows.Forms.TextBox
     Friend WithEvents Label6 As System.Windows.Forms.Label
     Friend WithEvents cbType As System.Windows.Forms.ComboBox
+    Friend WithEvents btnSaveClose As System.Windows.Forms.Button
 End Class
