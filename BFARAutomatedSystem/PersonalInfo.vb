@@ -441,7 +441,7 @@ Public Class PersonalInfo
 
 
     Private Sub FillData()
-        'On Error Resume Next
+        On Error Resume Next
         Dim arrImage() As Byte
 
         With CallEmployee.Rows(pNav)
