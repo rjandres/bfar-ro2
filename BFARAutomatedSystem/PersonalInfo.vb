@@ -437,9 +437,6 @@ Public Class PersonalInfo
 
         'cbDesignation.Enabled = True
     End Sub
-
-
-
     Private Sub FillData()
         On Error Resume Next
         Dim arrImage() As Byte
